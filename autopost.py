@@ -1,16 +1,15 @@
-
-
 #!/usr/bin/env python3
 """
-Sora AutoPost — Daily YouTube Shorts Automation
-Uses Hugging Face Spaces (free GPU) for video generation.
+AutoPost — Daily YouTube Shorts Automation
+Uses Google Veo 3 (free via Google AI Studio) for video generation.
 Runs on GitHub Actions every day. Laptop never needs to be on.
 """
 
 import json
 import os
 import time
-from gradio_client import Client
+from google import genai
+from google.genai import types
 from googleapiclient.discovery import build
 from googleapiclient.http import MediaFileUpload
 from google.oauth2.credentials import Credentials
@@ -33,25 +32,36 @@ def load_prompts():
     with open(PROMPTS_FILE) as f:
         return json.load(f)
 
-# ─── VIDEO GENERATION (Hugging Face Space - Free GPU) ─────────────────────────
+# ─── VIDEO GENERATION (Google Veo 3 - Free via AI Studio) ─────────────────────
 def generate_video(prompt: str) -> str:
-    print(f"Generating video...")
+    print(f"Generating video with Google Veo 3...")
     print(f"   Prompt: {prompt[:80]}...")
 
-    client = Client("fffiloni/zeroscope")
-    print("   Connecting to Hugging Face Space (free GPU)...")
+    client = genai.Client(api_key=os.environ["GOOGLE_API_KEY"])
 
-    result = client.predict(
-        prompt,
-        24,
-        "576x320",
-        40,
-        7.5,
-        api_name="/predict"
+    operation = client.models.generate_videos(
+        model="veo-3.0-generate-preview",
+        prompt=prompt,
+        config=types.GenerateVideosConfig(
+            aspect_ratio="9:16",      # Vertical for YouTube Shorts
+            duration_seconds=8,       # 8 second video
+            number_of_videos=1,
+        ),
     )
 
-    print(f"   Video generated: {result}")
-    return result
+    print("   Waiting for video to generate (this takes ~2-5 mins)...")
+    while not operation.done:
+        time.sleep(20)
+        operation = client.operations.get(operation)
+        print("   Still generating...")
+
+    generated_video = operation.result.generated_videos[0]
+    client.files.download(file=generated_video.video)
+    video_path = "output.mp4"
+    generated_video.video.save(video_path)
+
+    print(f"   Video saved: {video_path}")
+    return video_path
 
 # ─── YOUTUBE UPLOAD ───────────────────────────────────────────────────────────
 def upload_to_youtube(video_path: str, prompt: str) -> str:
@@ -128,5 +138,7 @@ if __name__ == "__main__":
     save_progress(progress)
 
     print(f"\nDone! Short #{progress['posted_count']} posted: {url}\n")
+
+
 
 
