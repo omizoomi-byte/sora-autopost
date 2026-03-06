@@ -1,10 +1,10 @@
 
-name: Daily YouTube Short
+name: Daily Trend YouTube Short
 
 on:
   schedule:
-    - cron: '0 9 * * *'
-  workflow_dispatch:
+    - cron: '0 9 * * *'   # Every day at 9am UTC
+  workflow_dispatch:        # Manual trigger from GitHub
 
 jobs:
   post:
@@ -16,12 +16,15 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Install dependencies
-        run: pip install google-genai google-auth google-auth-oauthlib google-api-python-client
+      - name: Install ffmpeg
+        run: sudo apt-get install -y ffmpeg fonts-dejavu
+
+      - name: Install Python dependencies
+        run: pip install pytrends requests google-auth google-auth-oauthlib google-api-python-client
 
       - name: Run autopost
         env:
-          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
           YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
           YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
           YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
@@ -32,5 +35,6 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add progress.json
-          git diff --staged --quiet || git commit -m "Posted daily Short"
+          git diff --staged --quiet || git commit -m "✅ Posted trend Short #$(cat progress.json | python3 -c 'import sys,json; print(json.load(sys.stdin)[\"posted_count\"])')"
           git push
+
