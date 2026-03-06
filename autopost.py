@@ -1,13 +1,16 @@
+
+
 #!/usr/bin/env python3
 """
 Sora AutoPost — Daily YouTube Shorts Automation
+Uses Hugging Face Spaces (free GPU) for video generation.
 Runs on GitHub Actions every day. Laptop never needs to be on.
 """
 
 import json
 import os
 import time
-import requests
+from gradio_client import Client
 from googleapiclient.discovery import build
 from googleapiclient.http import MediaFileUpload
 from google.oauth2.credentials import Credentials
@@ -22,79 +25,38 @@ def load_progress():
             return json.load(f)
     return {"current_index": 0, "posted_count": 0, "history": []}
 
-def save_progress(progress):
+def save_progress(p):
     with open(PROGRESS_FILE, "w") as f:
-        json.dump(progress, f, indent=2)
+        json.dump(p, f, indent=2)
 
 def load_prompts():
     with open(PROMPTS_FILE) as f:
         return json.load(f)
 
-# ─── SORA VIDEO GENERATION ────────────────────────────────────────────────────
-def generate_video(prompt: str, api_key: str) -> str:
-    """Submit prompt to Sora, wait for completion, return local video path."""
+# ─── VIDEO GENERATION (Hugging Face Space - Free GPU) ─────────────────────────
+def generate_video(prompt: str) -> str:
+    print(f"Generating video...")
+    print(f"   Prompt: {prompt[:80]}...")
 
-    print(f"🎬 Generating video for prompt #{progress['current_index'] + 1}...")
-    print(f"   {prompt[:80]}...")
+    client = Client("fffiloni/zeroscope")
+    print("   Connecting to Hugging Face Space (free GPU)...")
 
-    headers = {
-        "Authorization": f"Bearer {api_key}",
-        "Content-Type": "application/json"
-    }
-
-    # Submit generation request
-    response = requests.post(
-        "https://api.openai.com/v1/video/generations",
-        headers=headers,
-        json={
-            "prompt": prompt,
-            "model": "sora-1.0",
-            "size": "1080x1920",   # 9:16 vertical for Shorts
-            "duration": 20,
-            "n": 1
-        }
+    result = client.predict(
+        prompt,
+        24,
+        "576x320",
+        40,
+        7.5,
+        api_name="/predict"
     )
-    response.raise_for_status()
-    job = response.json()
-    job_id = job["id"]
-    print(f"   Job ID: {job_id} — waiting for completion...")
 
-    # Poll until done (Sora can take 2–10 mins)
-    for attempt in range(60):  # Max 30 minutes
-        time.sleep(30)
-        status_resp = requests.get(
-            f"https://api.openai.com/v1/video/generations/{job_id}",
-            headers=headers
-        )
-        status_resp.raise_for_status()
-        data = status_resp.json()
-        status = data.get("status")
-        print(f"   Status: {status} (attempt {attempt + 1}/60)")
-
-        if status == "succeeded":
-            video_url = data["data"][0]["url"]
-            break
-        elif status == "failed":
-            raise RuntimeError(f"Sora generation failed: {data}")
-    else:
-        raise TimeoutError("Sora generation timed out after 30 minutes.")
-
-    # Download the video
-    print("   Downloading video...")
-    video_path = "output.mp4"
-    video_data = requests.get(video_url)
-    with open(video_path, "wb") as f:
-        f.write(video_data.content)
-    print(f"   ✅ Video saved: {video_path}")
-    return video_path
+    print(f"   Video generated: {result}")
+    return result
 
 # ─── YOUTUBE UPLOAD ───────────────────────────────────────────────────────────
 def upload_to_youtube(video_path: str, prompt: str) -> str:
-    """Upload video to YouTube as a Short, return video URL."""
+    print("Uploading to YouTube Shorts...")
 
-    print("📤 Uploading to YouTube Shorts...")
-
-    # Build credentials from stored refresh token
     creds = Credentials(
         token=None,
         refresh_token=os.environ["YOUTUBE_REFRESH_TOKEN"],
@@ -106,16 +68,16 @@ def upload_to_youtube(video_path: str, prompt: str) -> str:
 
     youtube = build("youtube", "v3", credentials=creds)
 
-    # Extract a short title from the prompt (first descriptive clause)
-    title_raw = prompt.split(".")[2] if len(prompt.split(".")) > 2 else prompt
-    title = title_raw.strip()[:90]  # YouTube max title = 100 chars
+    words = prompt.split()
+    title = " ".join(words[10:20]) if len(words) > 10 else prompt[:80]
+    title = title.strip()[:90]
 
     body = {
         "snippet": {
             "title": title,
-            "description": f"#{title.replace(' ', '')} #YouTubeShorts #AIVideo #Sora\n\n{prompt}",
-            "tags": ["shorts", "AI", "Sora", "YouTubeShorts", "AIVideo"],
-            "categoryId": "24"  # Entertainment
+            "description": f"#Shorts #AIVideo\n\n{prompt[:500]}",
+            "tags": ["shorts", "AI", "AIVideo", "YouTubeShorts"],
+            "categoryId": "24"
         },
         "status": {
             "privacyStatus": "public",
@@ -134,7 +96,7 @@ def upload_to_youtube(video_path: str, prompt: str) -> str:
 
     video_id = response["id"]
     url = f"https://youtube.com/shorts/{video_id}"
-    print(f"   ✅ Posted: {url}")
+    print(f"   Posted: {url}")
     return url
 
 # ─── MAIN ─────────────────────────────────────────────────────────────────────
@@ -144,31 +106,27 @@ if __name__ == "__main__":
 
     idx = progress["current_index"]
     if idx >= len(prompts):
-        print("🎉 All 1000 prompts have been posted! Reset progress.json to start over.")
+        print("All 1000 prompts posted! Reset progress.json to start over.")
         exit(0)
 
     prompt = prompts[idx]
     print(f"\n{'='*60}")
-    print(f"🚀 SORA AUTOPOST — Day {idx + 1} of {len(prompts)}")
+    print(f"AUTOPOST — Day {idx + 1} of {len(prompts)}")
     print(f"{'='*60}\n")
 
-    # 1. Generate video
-    api_key    = os.environ["OPENAI_API_KEY"]
-    video_path = generate_video(prompt, api_key)
-
-    # 2. Upload to YouTube
+    video_path = generate_video(prompt)
     url = upload_to_youtube(video_path, prompt)
 
-    # 3. Update progress (GitHub Actions will commit this back to the repo)
     progress["current_index"] = idx + 1
     progress["posted_count"]  = progress.get("posted_count", 0) + 1
     progress["history"].append({
         "index": idx,
         "prompt": prompt[:120] + "...",
         "youtube_url": url,
-        "posted_at": time.strftime("%Y-%m-%d %Human:%M UTC")
+        "posted_at": time.strftime("%Y-%m-%d %H:%M UTC")
     })
     save_progress(progress)
 
-    print(f"\n✅ Done! Short #{progress['posted_count']} posted.")
-    print(f"   {url}\n")
+    print(f"\nDone! Short #{progress['posted_count']} posted: {url}\n")
+
+
