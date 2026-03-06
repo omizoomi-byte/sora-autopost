@@ -1,5 +1,5 @@
 
-name: Daily Sora YouTube Short
+ame: Daily YouTube Short
 
 on:
   schedule:
@@ -17,10 +17,11 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install gradio_client google-auth google-auth-oauthlib google-api-python-client
+        run: pip install google-genai google-auth google-auth-oauthlib google-api-python-client
 
       - name: Run autopost
         env:
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
           YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
           YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
           YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
