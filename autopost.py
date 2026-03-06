@@ -1,20 +1,14 @@
 #!/usr/bin/env python3
 """
 Trend AutoPost — Daily YouTube Shorts Automation
-Pipeline:
-  1. Fetch today's #1 trending topic (Google Trends via pytrends - FREE)
-  2. Download matching stock video clips (Pexels API - FREE)
-  3. Stitch clips + add text overlay (ffmpeg - FREE)
-  4. Upload to YouTube Shorts (YouTube API - FREE)
-Runs on GitHub Actions daily. No credits. No cookies. No maintenance.
+1. Gets today's #1 trending topic (Google Trends - FREE)
+2. Generates smarter Pexels search keywords from related queries
+3. Downloads best matching stock clips (Pexels API - FREE)
+4. Stitches clips + adds text overlay (ffmpeg - FREE)
+5. Posts to YouTube Shorts (YouTube API - FREE)
 """
 
-import json
-import os
-import time
-import subprocess
-import requests
-import random
+import json, os, time, subprocess, requests, random
 from pytrends.request import TrendReq
 from googleapiclient.discovery import build
 from googleapiclient.http import MediaFileUpload
@@ -22,7 +16,6 @@ from google.oauth2.credentials import Credentials
 
 PROGRESS_FILE = "progress.json"
 
-# ─── PROGRESS ─────────────────────────────────────────────────────────────────
 def load_progress():
     if os.path.exists(PROGRESS_FILE):
         with open(PROGRESS_FILE) as f:
@@ -33,119 +26,165 @@ def save_progress(p):
     with open(PROGRESS_FILE, "w") as f:
         json.dump(p, f, indent=2)
 
-# ─── STEP 1: GET TRENDING TOPIC ───────────────────────────────────────────────
-def get_trending_topic() -> str:
-    print("📈 Fetching today's trending topic from Google Trends...")
+# ─── STEP 1: GET TRENDING TOPIC + RELATED KEYWORDS ───────────────────────────
+def get_trend_and_keywords():
+    print("📈 Fetching trending topic and related keywords...")
     try:
         pytrends = TrendReq(hl='en-US', tz=0)
+
+        # Get today's #1 trending topic in UK
         trending = pytrends.trending_searches(pn='united_kingdom')
         topic = trending.iloc[0][0]
         print(f"   Trending topic: {topic}")
-        return topic
+
+        # Get related queries to find better visual search terms
+        time.sleep(2)
+        pytrends.build_payload([topic], timeframe='now 1-d', geo='GB')
+        time.sleep(2)
+        related = pytrends.related_queries()
+
+        keywords = [topic]  # always include the raw topic
+
+        # Extract top related queries as extra search terms
+        try:
+            top_df = related[topic]['top']
+            if top_df is not None and len(top_df) > 0:
+                extra = top_df['query'].head(4).tolist()
+                keywords.extend(extra)
+                print(f"   Related keywords: {extra}")
+        except Exception:
+            pass
+
+        # Also get Google suggestions for more visual terms
+        try:
+            time.sleep(1)
+            suggestions = pytrends.suggestions(keyword=topic)
+            sug_titles = [s['title'] for s in suggestions[:3]]
+            keywords.extend(sug_titles)
+            print(f"   Suggestions: {sug_titles}")
+        except Exception:
+            pass
+
+        return topic, keywords
+
     except Exception as e:
         print(f"   Google Trends failed ({e}), using fallback...")
-        fallbacks = [
-            "Technology", "Nature", "Space", "Ocean", "Mountains",
-            "Cities", "Animals", "Food", "Sports", "Music"
-        ]
-        topic = random.choice(fallbacks)
-        print(f"   Using fallback topic: {topic}")
-        return topic
+        fallback = random.choice([
+            "Technology", "Nature", "Space", "Ocean", "City",
+            "Animals", "Sports", "Science", "Weather", "Music"
+        ])
+        return fallback, [fallback]
 
-# ─── STEP 2: DOWNLOAD STOCK VIDEO CLIPS FROM PEXELS ──────────────────────────
-def download_clips(topic: str, pexels_key: str, num_clips: int = 3) -> list:
-    print(f"🎬 Searching Pexels for '{topic}' video clips...")
-
+# ─── STEP 2: DOWNLOAD BEST MATCHING CLIPS FROM PEXELS ────────────────────────
+def download_clips(topic: str, keywords: list, pexels_key: str, num_clips: int = 3):
+    print(f"🎬 Searching Pexels for best matching clips...")
     headers = {"Authorization": pexels_key}
-    params  = {"query": topic, "per_page": 15, "orientation": "portrait", "size": "medium"}
-
-    resp = requests.get("https://api.pexels.com/videos/search", headers=headers, params=params)
-    resp.raise_for_status()
-    data = resp.json()
-
-    videos = data.get("videos", [])
-    if not videos:
-        # Try a more generic search if topic returns nothing
-        print(f"   No results for '{topic}', trying generic search...")
-        params["query"] = "nature landscape"
-        resp = requests.get("https://api.pexels.com/videos/search", headers=headers, params=params)
-        data = resp.json()
-        videos = data.get("videos", [])
-
-    if not videos:
-        raise RuntimeError("No videos found on Pexels.")
-
-    # Shuffle and pick clips
-    random.shuffle(videos)
-    selected = videos[:num_clips]
-
     clip_paths = []
-    for i, video in enumerate(selected):
-        # Get the HD video file
-        video_files = sorted(video["video_files"], key=lambda x: x.get("width", 0), reverse=True)
-        # Prefer portrait files
-        portrait = [f for f in video_files if f.get("width", 0) < f.get("height", 1)]
-        file_url = (portrait[0] if portrait else video_files[0])["link"]
 
-        path = f"clip_{i}.mp4"
-        print(f"   Downloading clip {i+1}/{num_clips}...")
-        r = requests.get(file_url, stream=True, timeout=60)
-        with open(path, "wb") as f:
-            for chunk in r.iter_content(chunk_size=8192):
-                f.write(chunk)
-        clip_paths.append(path)
-        print(f"   Saved: {path}")
+    # Try each keyword until we have enough clips
+    for keyword in keywords:
+        if len(clip_paths) >= num_clips:
+            break
+
+        keyword = keyword[:50]  # Pexels has a query length limit
+        print(f"   Trying keyword: '{keyword}'...")
+        params = {"query": keyword, "per_page": 10, "orientation": "portrait", "size": "medium"}
+
+        try:
+            resp = requests.get("https://api.pexels.com/videos/search",
+                                headers=headers, params=params, timeout=30)
+            resp.raise_for_status()
+            videos = resp.json().get("videos", [])
+        except Exception as e:
+            print(f"   Pexels search failed for '{keyword}': {e}")
+            continue
+
+        random.shuffle(videos)
+        for video in videos:
+            if len(clip_paths) >= num_clips:
+                break
+
+            # Prefer portrait video files
+            video_files = sorted(video["video_files"],
+                                 key=lambda x: x.get("width", 0), reverse=True)
+            portrait = [f for f in video_files
+                        if f.get("width", 1) < f.get("height", 0)]
+            chosen = (portrait[0] if portrait else video_files[0])
+
+            path = f"clip_{len(clip_paths)}.mp4"
+            try:
+                r = requests.get(chosen["link"], stream=True, timeout=60)
+                with open(path, "wb") as f:
+                    for chunk in r.iter_content(chunk_size=8192):
+                        f.write(chunk)
+                clip_paths.append(path)
+                print(f"   ✅ Clip {len(clip_paths)} downloaded (keyword: '{keyword}')")
+            except Exception as e:
+                print(f"   Download failed: {e}")
+
+    # Fallback if still not enough clips
+    if not clip_paths:
+        print("   Using generic fallback search...")
+        params = {"query": "abstract background", "per_page": 5,
+                  "orientation": "portrait"}
+        resp = requests.get("https://api.pexels.com/videos/search",
+                            headers=headers, params=params, timeout=30)
+        videos = resp.json().get("videos", [])
+        for video in videos[:num_clips]:
+            video_files = sorted(video["video_files"],
+                                 key=lambda x: x.get("width", 0), reverse=True)
+            path = f"clip_{len(clip_paths)}.mp4"
+            r = requests.get(video_files[0]["link"], stream=True, timeout=60)
+            with open(path, "wb") as f:
+                for chunk in r.iter_content(chunk_size=8192):
+                    f.write(chunk)
+            clip_paths.append(path)
 
     return clip_paths
 
-# ─── STEP 3: STITCH CLIPS + ADD TEXT OVERLAY ──────────────────────────────────
+# ─── STEP 3: STITCH CLIPS + ADD TEXT OVERLAY ─────────────────────────────────
 def create_short(clip_paths: list, topic: str, output_path: str = "output.mp4"):
-    print("✂️  Stitching clips and adding text overlay with ffmpeg...")
+    print("✂️  Stitching clips with ffmpeg...")
 
-    # Write concat list
     with open("concat.txt", "w") as f:
         for path in clip_paths:
             f.write(f"file '{path}'\n")
 
-    # Step A: Concat all clips
+    # Concat clips
     subprocess.run([
         "ffmpeg", "-y", "-f", "concat", "-safe", "0",
-        "-i", "concat.txt",
-        "-c", "copy", "combined.mp4"
+        "-i", "concat.txt", "-c", "copy", "combined.mp4"
     ], check=True, capture_output=True)
 
-    # Step B: Resize to 9:16 (1080x1920), trim to 30s, add text overlay
-    # Clean topic text for ffmpeg (escape special chars)
-    safe_topic = topic.replace("'", "").replace(":", "").replace("\\", "")[:40]
+    # Clean topic text for ffmpeg
+    safe_topic = topic.replace("'", "").replace(":", "").replace("\\", "")
+    safe_topic = safe_topic[:40]
 
+    # Resize to 9:16, trim to 30s, add text overlay at bottom
     filter_complex = (
         "[0:v]scale=1080:1920:force_original_aspect_ratio=increase,"
-        "crop=1080:1920,"
-        "setsar=1,"
-        f"drawtext=text='{safe_topic}':fontsize=72:fontcolor=white:"
-        "borderw=4:bordercolor=black:"
-        "x=(w-text_w)/2:y=h-200:"
+        "crop=1080:1920,setsar=1,"
+        f"drawtext=text='🔥 {safe_topic}':fontsize=64:fontcolor=white:"
+        "borderw=5:bordercolor=black:"
+        "x=(w-text_w)/2:y=h-180:"
         "font=DejaVuSans-Bold[v]"
     )
 
     subprocess.run([
-        "ffmpeg", "-y",
-        "-i", "combined.mp4",
+        "ffmpeg", "-y", "-i", "combined.mp4",
         "-filter_complex", filter_complex,
-        "-map", "[v]",
-        "-map", "0:a?",
+        "-map", "[v]", "-map", "0:a?",
         "-c:v", "libx264", "-preset", "fast", "-crf", "23",
         "-c:a", "aac", "-b:a", "128k",
-        "-t", "30",          # Max 30 seconds for a Short
-        "-r", "30",          # 30fps
+        "-t", "30", "-r", "30",
         output_path
     ], check=True, capture_output=True)
 
-    print(f"   Video ready: {output_path}")
+    print(f"   Video ready!")
     return output_path
 
 # ─── STEP 4: UPLOAD TO YOUTUBE ────────────────────────────────────────────────
-def upload_to_youtube(video_path: str, topic: str) -> str:
+def upload_to_youtube(video_path: str, topic: str, keywords: list) -> str:
     print("📤 Uploading to YouTube Shorts...")
 
     creds = Credentials(
@@ -159,18 +198,20 @@ def upload_to_youtube(video_path: str, topic: str) -> str:
 
     youtube = build("youtube", "v3", credentials=creds)
 
-    title = f"{topic} — Trending Now 🔥 #Shorts"[:100]
+    title = f"🔥 {topic} — Trending Now! #Shorts"[:100]
+    tags = [topic] + keywords[:5] + ["trending", "shorts", "viral", "today"]
     description = (
         f"#{topic.replace(' ', '')} #Trending #Shorts #viral\n\n"
-        f"Today's trending topic: {topic}"
+        f"Today's trending topic: {topic}\n"
+        f"Related: {', '.join(keywords[1:4])}"
     )
 
     body = {
         "snippet": {
             "title": title,
             "description": description,
-            "tags": [topic, "trending", "shorts", "viral", "today"],
-            "categoryId": "25"   # News & Politics — good for trending content
+            "tags": tags[:15],
+            "categoryId": "25"
         },
         "status": {
             "privacyStatus": "public",
@@ -187,40 +228,33 @@ def upload_to_youtube(video_path: str, topic: str) -> str:
         if status:
             print(f"   Upload {int(status.progress() * 100)}%...")
 
-    video_id = response["id"]
-    url = f"https://youtube.com/shorts/{video_id}"
+    url = f"https://youtube.com/shorts/{response['id']}"
     print(f"   ✅ Posted: {url}")
     return url
 
 # ─── MAIN ─────────────────────────────────────────────────────────────────────
 if __name__ == "__main__":
-    progress    = load_progress()
-    pexels_key  = os.environ["PEXELS_API_KEY"]
+    progress   = load_progress()
+    pexels_key = os.environ["PEXELS_API_KEY"]
 
     print(f"\n{'='*60}")
     print(f"TREND AUTOPOST — Short #{progress['posted_count'] + 1}")
     print(f"{'='*60}\n")
 
-    # 1. Get trending topic
-    topic = get_trending_topic()
+    topic, keywords = get_trend_and_keywords()
+    clip_paths      = download_clips(topic, keywords, pexels_key, num_clips=3)
+    video_path      = create_short(clip_paths, topic)
+    url             = upload_to_youtube(video_path, topic, keywords)
 
-    # 2. Download clips
-    clip_paths = download_clips(topic, pexels_key, num_clips=3)
-
-    # 3. Create Short
-    video_path = create_short(clip_paths, topic)
-
-    # 4. Upload to YouTube
-    url = upload_to_youtube(video_path, topic)
-
-    # 5. Save progress
     progress["posted_count"] = progress.get("posted_count", 0) + 1
     progress["history"].append({
         "topic": topic,
+        "keywords": keywords,
         "youtube_url": url,
         "posted_at": time.strftime("%Y-%m-%d %H:%M UTC")
     })
     save_progress(progress)
 
     print(f"\n✅ Done! Short #{progress['posted_count']} posted: {url}")
-    print(f"   Topic: {topic}\n")
+    print(f"   Topic: {topic}")
+    print(f"   Keywords used: {keywords}\n")
