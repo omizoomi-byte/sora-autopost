@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 AutoPost — Daily YouTube Shorts Automation
-Uses Google Veo 3 (free via Google AI Studio) for video generation.
+Uses Google Veo 2 (free via Google AI Studio) for video generation.
 Runs on GitHub Actions every day. Laptop never needs to be on.
 """
 
@@ -14,7 +14,6 @@ from googleapiclient.discovery import build
 from googleapiclient.http import MediaFileUpload
 from google.oauth2.credentials import Credentials
 
-# ─── LOAD PROGRESS ────────────────────────────────────────────────────────────
 PROGRESS_FILE = "progress.json"
 PROMPTS_FILE  = "prompts.json"
 
@@ -32,38 +31,36 @@ def load_prompts():
     with open(PROMPTS_FILE) as f:
         return json.load(f)
 
-# ─── VIDEO GENERATION (Google Veo 3 - Free via AI Studio) ─────────────────────
 def generate_video(prompt: str) -> str:
-    print(f"Generating video with Google Veo 3...")
+    print(f"Generating video with Google Veo 2 (free)...")
     print(f"   Prompt: {prompt[:80]}...")
 
     client = genai.Client(api_key=os.environ["GOOGLE_API_KEY"])
 
     operation = client.models.generate_videos(
-        model="veo-3.0-generate-preview",
+        model="veo-2.0-generate-001",
         prompt=prompt,
         config=types.GenerateVideosConfig(
-            aspect_ratio="9:16",      # Vertical for YouTube Shorts
-            duration_seconds=8,       # 8 second video
+            aspect_ratio="9:16",
+            duration_seconds=8,
             number_of_videos=1,
         ),
     )
 
-    print("   Waiting for video to generate (this takes ~2-5 mins)...")
+    print("   Waiting for video (2-5 mins)...")
     while not operation.done:
         time.sleep(20)
         operation = client.operations.get(operation)
         print("   Still generating...")
 
-    generated_video = operation.result.generated_videos[0]
-    client.files.download(file=generated_video.video)
+    video = operation.response.generated_videos[0].video
     video_path = "output.mp4"
-    generated_video.video.save(video_path)
+    with open(video_path, "wb") as f:
+        f.write(video.video_bytes)
 
-    print(f"   Video saved: {video_path}")
+    print(f"   Video saved!")
     return video_path
 
-# ─── YOUTUBE UPLOAD ───────────────────────────────────────────────────────────
 def upload_to_youtube(video_path: str, prompt: str) -> str:
     print("Uploading to YouTube Shorts...")
 
@@ -109,14 +106,13 @@ def upload_to_youtube(video_path: str, prompt: str) -> str:
     print(f"   Posted: {url}")
     return url
 
-# ─── MAIN ─────────────────────────────────────────────────────────────────────
 if __name__ == "__main__":
     prompts  = load_prompts()
     progress = load_progress()
 
     idx = progress["current_index"]
     if idx >= len(prompts):
-        print("All 1000 prompts posted! Reset progress.json to start over.")
+        print("All 1000 prompts posted!")
         exit(0)
 
     prompt = prompts[idx]
@@ -138,7 +134,4 @@ if __name__ == "__main__":
     save_progress(progress)
 
     print(f"\nDone! Short #{progress['posted_count']} posted: {url}\n")
-
-
-
 
