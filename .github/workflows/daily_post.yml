@@ -3,14 +3,19 @@ name: Daily Trend YouTube Short
 
 on:
   schedule:
-    - cron: '0 9 * * *'   # Every day at 9am UTC
-  workflow_dispatch:        # Manual trigger from GitHub
+    - cron: '0 9 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   post:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - uses: actions/setup-python@v5
         with:
@@ -35,6 +40,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add progress.json
-          git diff --staged --quiet || git commit -m "✅ Posted trend Short #$(cat progress.json | python3 -c 'import sys,json; print(json.load(sys.stdin)[\"posted_count\"])')"
+          git diff --staged --quiet || git commit -m "Posted trend Short"
           git push
-
