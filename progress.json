@@ -1,4 +1,10 @@
 {
-  "posted_count": 0,
-  "history": []
+  "posted_count": 1,
+  "history": [
+    {
+      "topic": "Sports",
+      "youtube_url": "https://youtube.com/shorts/x4DEXj7rDHE",
+      "posted_at": "2026-03-06 22:05 UTC"
+    }
+  ]
 }
