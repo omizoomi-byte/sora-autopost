@@ -144,7 +144,7 @@ Rules:
 - pexels_search should be 1-2 words max (e.g. "ocean", "football", "space")
 - No markdown, no extra text, just the JSON"""
 
-    response = client.models.generate_content(model="gemini-2.0-flash", contents=prompt)
+    response = client.models.generate_content(model="gemini-1.5-flash-8b", contents=prompt)
     raw = response.text.strip()
     raw = raw.replace("```json", "").replace("```", "").strip()
     data = json.loads(raw)
