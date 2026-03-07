@@ -1,4 +1,4 @@
-""
+"""
 YouTube Shorts Fun Facts Auto-Poster
 ======================================
 Every day this script:
@@ -14,7 +14,6 @@ REQUIREMENTS:
               google-auth-httplib2 google-api-python-client
 
 API KEYS NEEDED (all free tiers):
-  - ANTHROPIC_API_KEY  → anthropic.com (free tier available)
   - PEXELS_API_KEY     → pexels.com/api (free)
   - YouTube OAuth      → console.cloud.google.com (free)
 """
@@ -504,4 +503,3 @@ if __name__ == "__main__":
             print(f"Last post:    {tracker['posted'][-1]['title']}")
     else:
         parser.print_help()
-
