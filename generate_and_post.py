@@ -1,4 +1,4 @@
-"""
+""
 YouTube Shorts Fun Facts Auto-Poster
 ======================================
 Every day this script:
@@ -32,7 +32,7 @@ import subprocess
 from pathlib import Path
 from datetime import datetime
 
-import google.generativeai as genai
+from google import genai
 from gtts import gTTS
 from moviepy import (
     VideoFileClip, AudioFileClip, CompositeVideoClip,
@@ -121,8 +121,7 @@ def pick_topic(tracker):
 # ─────────────────────────────────────────────
 def generate_facts(topic: str) -> dict:
     log.info(f"🤖 Generating facts about: {topic}")
-    genai.configure(api_key=GOOGLE_API_KEY)
-    model = genai.GenerativeModel("gemini-1.5-flash")
+    client = genai.Client(api_key=GOOGLE_API_KEY)
 
     prompt = f"""Generate exactly 5 fascinating, surprising fun facts about {topic}.
     
@@ -146,7 +145,7 @@ Rules:
 - pexels_search should be 1-2 words max (e.g. "ocean", "football", "space")
 - No markdown, no extra text, just the JSON"""
 
-    response = model.generate_content(prompt)
+    response = client.models.generate_content(model="gemini-2.0-flash", contents=prompt)
     raw = response.text.strip()
     raw = raw.replace("```json", "").replace("```", "").strip()
     data = json.loads(raw)
@@ -505,3 +504,4 @@ if __name__ == "__main__":
             print(f"Last post:    {tracker['posted'][-1]['title']}")
     else:
         parser.print_help()
+
