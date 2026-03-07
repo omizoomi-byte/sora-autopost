@@ -1,3 +1,4 @@
+"""
 YouTube Shorts Fun Facts Auto-Poster
 ======================================
 Every day this script:
@@ -13,8 +14,8 @@ REQUIREMENTS:
               google-auth-httplib2 google-api-python-client
 
 API KEYS NEEDED (all free tiers):
-  - PEXELS_API_KEY     → pexels.com/api (free)
-  - YouTube OAuth      → console.cloud.google.com (free)
+  - PEXELS_API_KEY      pexels.com/api (free)
+  - YouTube OAuth       console.cloud.google.com (free)
 """
 
 import os
