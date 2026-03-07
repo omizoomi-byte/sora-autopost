@@ -34,11 +34,11 @@ from datetime import datetime
 
 import anthropic
 from gtts import gTTS
-from moviepy.editor import (
+from moviepy import (
     VideoFileClip, AudioFileClip, CompositeVideoClip,
     TextClip, concatenate_audioclips, ColorClip
 )
-from moviepy.video.fx.all import resize
+from moviepy.video.fx import Resize
 
 import google_auth_oauthlib.flow
 import googleapiclient.discovery
@@ -232,18 +232,18 @@ def build_video(facts_data: dict, video_path: str, audio_path: str, output_path:
     target_ratio = VIDEO_WIDTH / VIDEO_HEIGHT
 
     if bg_ratio > target_ratio:
-        bg = resize(bg, height=VIDEO_HEIGHT)
+        bg = bg.resized(height=VIDEO_HEIGHT)
         x_center = bg.w / 2
         bg = bg.crop(x1=x_center - VIDEO_WIDTH/2, x2=x_center + VIDEO_WIDTH/2)
     else:
-        bg = resize(bg, width=VIDEO_WIDTH)
+        bg = bg.resized(width=VIDEO_WIDTH)
         y_center = bg.h / 2
         bg = bg.crop(y1=y_center - VIDEO_HEIGHT/2, y2=y_center + VIDEO_HEIGHT/2)
 
     # Loop background video to fill duration
     if bg.duration < VIDEO_DURATION:
         loops = int(VIDEO_DURATION / bg.duration) + 1
-        from moviepy.editor import concatenate_videoclips
+        from moviepy import concatenate_videoclips
         bg = concatenate_videoclips([bg] * loops)
     bg = bg.subclip(0, VIDEO_DURATION)
 
@@ -510,3 +510,4 @@ if __name__ == "__main__":
             print(f"Last post:    {tracker['posted'][-1]['title']}")
     else:
         parser.print_help()
+
