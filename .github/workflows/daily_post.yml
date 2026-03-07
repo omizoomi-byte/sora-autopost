@@ -25,7 +25,7 @@ jobs:
 
       - name: Install Python dependencies
         run: |
-          pip install google-genai requests gTTS moviepy \
+          pip install requests gTTS moviepy \
                       google-auth google-auth-oauthlib \
                       google-auth-httplib2 google-api-python-client
 
