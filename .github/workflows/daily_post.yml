@@ -1,4 +1,4 @@
-name: Daily Fun Facts Short
+nname: Daily Fun Facts Short
 
 on:
   schedule:
@@ -25,7 +25,7 @@ jobs:
 
       - name: Install Python dependencies
         run: |
-          pip install anthropic requests gTTS moviepy \
+          pip install google-generativeai requests gTTS moviepy \
                       google-auth google-auth-oauthlib \
                       google-auth-httplib2 google-api-python-client
 
@@ -36,7 +36,7 @@ jobs:
 
       - name: Generate and post Short
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
         run: python generate_and_post.py --run
 
