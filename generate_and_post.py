@@ -1,4 +1,3 @@
-"""
 YouTube Shorts Fun Facts Auto-Poster
 ======================================
 Every day this script:
@@ -31,7 +30,6 @@ import subprocess
 from pathlib import Path
 from datetime import datetime
 
-from google import genai
 from gtts import gTTS
 from moviepy import (
     VideoFileClip, AudioFileClip, CompositeVideoClip,
@@ -120,8 +118,6 @@ def pick_topic(tracker):
 # ─────────────────────────────────────────────
 def generate_facts(topic: str) -> dict:
     log.info(f"🤖 Generating facts about: {topic}")
-    client = genai.Client(api_key=GOOGLE_API_KEY)
-
     prompt = f"""Generate exactly 5 fascinating, surprising fun facts about {topic}.
     
 Return ONLY a JSON object in this exact format, nothing else:
@@ -144,8 +140,11 @@ Rules:
 - pexels_search should be 1-2 words max (e.g. "ocean", "football", "space")
 - No markdown, no extra text, just the JSON"""
 
-    response = client.models.generate_content(model="gemini-1.5-flash-8b", contents=prompt)
-    raw = response.text.strip()
+    url = f"https://generativelanguage.googleapis.com/v1/models/gemini-pro:generateContent?key={GOOGLE_API_KEY}"
+    payload = {"contents": [{"parts": [{"text": prompt}]}]}
+    resp = requests.post(url, json=payload, timeout=30)
+    resp.raise_for_status()
+    raw = resp.json()["candidates"][0]["content"]["parts"][0]["text"].strip()
     raw = raw.replace("```json", "").replace("```", "").strip()
     data = json.loads(raw)
     log.info(f"✅ Generated facts: {data['title']}")
