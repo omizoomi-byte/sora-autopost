@@ -1,44 +1,51 @@
-
-name: Daily Trend YouTube Short
+name: Daily Fun Facts Short
 
 on:
   schedule:
-    - cron: '0 9 * * *'
-  workflow_dispatch:
-
-permissions:
-  contents: write
+    - cron: '0 9 * * *'   # 09:00 UTC daily (10:00 UK summer / 09:00 UK winter)
+  workflow_dispatch:       # Manual trigger from Actions tab
 
 jobs:
   post:
     runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
 
-      - uses: actions/setup-python@v5
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
-      - name: Install ffmpeg
-        run: sudo apt-get install -y ffmpeg fonts-dejavu
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update -q
+          sudo apt-get install -y ffmpeg imagemagick fonts-dejavu
 
       - name: Install Python dependencies
-        run: pip install pytrends requests google-auth google-auth-oauthlib google-api-python-client
-
-      - name: Run autopost
-        env:
-          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
-          YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
-          YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
-          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
-        run: python autopost.py
-
-      - name: Save progress
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add progress.json
-          git diff --staged --quiet || git commit -m "Posted trend Short"
+          pip install anthropic requests gTTS moviepy \
+                      google-auth google-auth-oauthlib \
+                      google-auth-httplib2 google-api-python-client
+
+      - name: Restore YouTube token
+        run: |
+          mkdir -p data
+          echo "${{ secrets.YOUTUBE_TOKEN }}" | base64 --decode > data/token.pickle
+
+      - name: Generate and post Short
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+        run: python generate_and_post.py --run
+
+      - name: Commit updated tracker
+        run: |
+          git config user.name "youtube-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add data/used_topics.json
+          git diff --staged --quiet || git commit -m "✅ Posted Short $(date +'%Y-%m-%d')"
           git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
