@@ -32,7 +32,7 @@ import subprocess
 from pathlib import Path
 from datetime import datetime
 
-import anthropic
+import google.generativeai as genai
 from gtts import gTTS
 from moviepy import (
     VideoFileClip, AudioFileClip, CompositeVideoClip,
@@ -49,7 +49,7 @@ from google.auth.transport.requests import Request
 # ─────────────────────────────────────────────
 # CONFIG — edit these
 # ─────────────────────────────────────────────
-ANTHROPIC_API_KEY   = os.environ.get("ANTHROPIC_API_KEY", "")
+GOOGLE_API_KEY      = os.environ.get("GOOGLE_API_KEY", "")
 PEXELS_API_KEY      = os.environ.get("PEXELS_API_KEY", "")
 TOKEN_FILE          = "data/token.pickle"
 SECRETS_FILE        = "client_secrets.json"
@@ -121,7 +121,8 @@ def pick_topic(tracker):
 # ─────────────────────────────────────────────
 def generate_facts(topic: str) -> dict:
     log.info(f"🤖 Generating facts about: {topic}")
-    client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
+    genai.configure(api_key=GOOGLE_API_KEY)
+    model = genai.GenerativeModel("gemini-1.5-flash")
 
     prompt = f"""Generate exactly 5 fascinating, surprising fun facts about {topic}.
     
@@ -145,14 +146,8 @@ Rules:
 - pexels_search should be 1-2 words max (e.g. "ocean", "football", "space")
 - No markdown, no extra text, just the JSON"""
 
-    message = client.messages.create(
-        model="claude-opus-4-5",
-        max_tokens=500,
-        messages=[{"role": "user", "content": prompt}]
-    )
-
-    raw = message.content[0].text.strip()
-    # Strip any accidental markdown
+    response = model.generate_content(prompt)
+    raw = response.text.strip()
     raw = raw.replace("```json", "").replace("```", "").strip()
     data = json.loads(raw)
     log.info(f"✅ Generated facts: {data['title']}")
@@ -510,4 +505,3 @@ if __name__ == "__main__":
             print(f"Last post:    {tracker['posted'][-1]['title']}")
     else:
         parser.print_help()
-
