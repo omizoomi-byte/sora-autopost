@@ -1,6 +1,7 @@
 {
   "used_topics": [
-    "Mount Everest"
+    "Mount Everest",
+    "Mars"
   ],
   "posted": [
     {
@@ -8,7 +9,13 @@
       "title": "5 Wild Facts About Mount Everest",
       "video_id": "n6Otp6jf6i8",
       "posted_at": "2026-03-08T12:40:18.344524"
+    },
+    {
+      "topic": "Mars",
+      "title": "5 Wild Facts About Mars",
+      "video_id": "RBCp69n2TaU",
+      "posted_at": "2026-03-08T12:49:33.134700"
     }
   ],
-  "total_posted": 1
+  "total_posted": 2
 }
