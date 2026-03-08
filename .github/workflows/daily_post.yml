@@ -25,7 +25,7 @@ jobs:
 
       - name: Install Python dependencies
         run: |
-          pip install requests edge-tts moviepy \
+          pip install requests edge-tts moviepy pydub \
                       google-auth google-auth-oauthlib \
                       google-auth-httplib2 google-api-python-client
 
