@@ -237,11 +237,11 @@ def build_video(facts_data: dict, video_path: str, audio_path: str, output_path:
     # Loop background video to fill duration
     if bg.duration < VIDEO_DURATION:
         loops = int(VIDEO_DURATION / bg.duration) + 1
-                bg = concatenate_videoclips([bg] * loops)
+        bg = concatenate_videoclips([bg] * loops)
     bg = bg.subclipped(0, VIDEO_DURATION)
 
     # Darken background for readability
-        overlay = ColorClip(size=(VIDEO_WIDTH, VIDEO_HEIGHT), color=(0, 0, 0), duration=VIDEO_DURATION)
+    overlay = ColorClip(size=(VIDEO_WIDTH, VIDEO_HEIGHT), color=(0, 0, 0), duration=VIDEO_DURATION)
     overlay = overlay.with_effects([vfx.MultiplyColor(0.55)])
 
     # Build text clips
