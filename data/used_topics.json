@@ -2,7 +2,8 @@
   "used_topics": [
     "Mount Everest",
     "Mars",
-    "World War II"
+    "World War II",
+    "wild animals"
   ],
   "posted": [
     {
@@ -22,7 +23,13 @@
       "title": "5 Wild Facts About World War Ii",
       "video_id": "1xNQePtL5jg",
       "posted_at": "2026-03-08T13:03:29.897857"
+    },
+    {
+      "topic": "wild animals",
+      "title": "5 Wild Facts About Wild Animals",
+      "video_id": "g7sArOXSwso",
+      "posted_at": "2026-03-08T13:19:07.568108"
     }
   ],
-  "total_posted": 3
+  "total_posted": 4
 }
