@@ -1,7 +1,8 @@
 {
   "used_topics": [
     "Mount Everest",
-    "Mars"
+    "Mars",
+    "World War II"
   ],
   "posted": [
     {
@@ -15,7 +16,13 @@
       "title": "5 Wild Facts About Mars",
       "video_id": "RBCp69n2TaU",
       "posted_at": "2026-03-08T12:49:33.134700"
+    },
+    {
+      "topic": "World War II",
+      "title": "5 Wild Facts About World War Ii",
+      "video_id": "1xNQePtL5jg",
+      "posted_at": "2026-03-08T13:03:29.897857"
     }
   ],
-  "total_posted": 2
+  "total_posted": 3
 }
