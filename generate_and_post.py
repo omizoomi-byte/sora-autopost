@@ -36,6 +36,7 @@ from moviepy import (
     VideoFileClip, AudioFileClip, CompositeVideoClip,
     TextClip, concatenate_audioclips, ColorClip
 )
+import moviepy.video.fx as vfx
 from moviepy.video.fx import Resize
 
 import google_auth_oauthlib.flow
@@ -227,11 +228,11 @@ def build_video(facts_data: dict, video_path: str, audio_path: str, output_path:
     if bg_ratio > target_ratio:
         bg = bg.resized(height=VIDEO_HEIGHT)
         x_center = bg.w / 2
-        bg = bg.crop(x1=x_center - VIDEO_WIDTH/2, x2=x_center + VIDEO_WIDTH/2)
+        bg = bg.with_effects([vfx.Crop(x1=x_center - VIDEO_WIDTH/2, x2=x_center + VIDEO_WIDTH/2)])
     else:
         bg = bg.resized(width=VIDEO_WIDTH)
         y_center = bg.h / 2
-        bg = bg.crop(y1=y_center - VIDEO_HEIGHT/2, y2=y_center + VIDEO_HEIGHT/2)
+        bg = bg.with_effects([vfx.Crop(y1=y_center - VIDEO_HEIGHT/2, y2=y_center + VIDEO_HEIGHT/2)])
 
     # Loop background video to fill duration
     if bg.duration < VIDEO_DURATION:
