@@ -10,7 +10,7 @@ Every day this script:
   6. Uploads the finished Short to YouTube automatically
 
 REQUIREMENTS:
-  pip install anthropic requests gTTS moviepy google-auth google-auth-oauthlib
+  pip install edge-tts requests moviepy google-auth google-auth-oauthlib
               google-auth-httplib2 google-api-python-client
 
 API KEYS NEEDED (all free tiers):
@@ -31,7 +31,8 @@ import subprocess
 from pathlib import Path
 from datetime import datetime
 
-from gtts import gTTS
+import edge_tts
+import asyncio
 from moviepy import (
     VideoFileClip, AudioFileClip, CompositeVideoClip,
     TextClip, concatenate_audioclips, ColorClip, concatenate_videoclips
@@ -206,8 +207,10 @@ def generate_voiceover(facts_data: dict, output_path: str) -> str:
     for i, fact in enumerate(facts_data["facts"], 1):
         script += f"Fact {i}. {fact} "
 
-    tts = gTTS(text=script, lang="en", tld="co.uk", slow=False)  # UK English = male-sounding
-    tts.save(output_path)
+    async def _gen():
+        communicate = edge_tts.Communicate(script, voice="en-US-GuyNeural")
+        await communicate.save(output_path)
+    asyncio.run(_gen())
     log.info(f"✅ Voiceover saved: {output_path}")
     return output_path
 
