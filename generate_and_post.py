@@ -141,7 +141,7 @@ Rules:
 - pexels_search should be 1-2 words max (e.g. "ocean", "football", "space")
 - No markdown, no extra text, just the JSON"""
 
-    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-exp:generateContent?key={GOOGLE_API_KEY}"
+    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key={GOOGLE_API_KEY}"
     payload = {"contents": [{"parts": [{"text": prompt}]}]}
     resp = requests.post(url, json=payload, timeout=30)
     resp.raise_for_status()
