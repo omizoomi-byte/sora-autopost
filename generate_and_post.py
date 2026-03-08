@@ -295,7 +295,6 @@ def build_video(facts_data: dict, video_path: str, audio_path: str, output_path:
         audio_codec="aac",
         temp_audiofile="data/temp_audio.m4a",
         remove_temp=True,
-        verbose=False,
         logger=None
     )
 
