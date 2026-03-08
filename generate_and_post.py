@@ -239,12 +239,12 @@ def build_video(facts_data: dict, video_path: str, audio_path: str, output_path:
         loops = int(VIDEO_DURATION / bg.duration) + 1
         from moviepy import concatenate_videoclips
         bg = concatenate_videoclips([bg] * loops)
-    bg = bg.subclip(0, VIDEO_DURATION)
+    bg = bg.subclipped(0, VIDEO_DURATION)
 
     # Darken background for readability
     from moviepy.editor import ColorClip
     overlay = ColorClip(size=(VIDEO_WIDTH, VIDEO_HEIGHT), color=(0, 0, 0), duration=VIDEO_DURATION)
-    overlay = overlay.set_opacity(0.45)
+    overlay = overlay.with_effects([vfx.MultiplyColor(0.55)])
 
     # Build text clips
     clips = [bg, overlay]
@@ -261,8 +261,8 @@ def build_video(facts_data: dict, video_path: str, audio_path: str, output_path:
         size=(VIDEO_WIDTH - 100, None),
         align="center"
     )
-    .set_position(("center", 120))
-    .set_duration(VIDEO_DURATION))
+    .with_position(("center", 120))
+    .with_duration(VIDEO_DURATION))
     clips.append(title_clip)
 
     # Fact number emoji map
@@ -282,9 +282,9 @@ def build_video(facts_data: dict, video_path: str, audio_path: str, output_path:
             stroke_color="black",
             stroke_width=2,
         )
-        .set_position(("center", 650))
-        .set_start(start_time)
-        .set_duration(duration))
+        .with_position(("center", 650))
+        .with_start(start_time)
+        .with_duration(duration))
 
         # Fact text
         wrapped = textwrap.fill(fact, width=28)
@@ -299,9 +299,9 @@ def build_video(facts_data: dict, video_path: str, audio_path: str, output_path:
             size=(VIDEO_WIDTH - 80, None),
             align="center"
         )
-        .set_position(("center", 750))
-        .set_start(start_time)
-        .set_duration(duration))
+        .with_position(("center", 750))
+        .with_start(start_time)
+        .with_duration(duration))
 
         clips.extend([num_clip, fact_clip])
 
@@ -314,21 +314,21 @@ def build_video(facts_data: dict, video_path: str, audio_path: str, output_path:
         stroke_color="black",
         stroke_width=3,
     )
-    .set_position(("center", 1600))
-    .set_start(VIDEO_DURATION - 4)
-    .set_duration(4))
+    .with_position(("center", 1600))
+    .with_start(VIDEO_DURATION - 4)
+    .with_duration(4))
     clips.append(outro_clip)
 
     # Composite all clips
     final = CompositeVideoClip(clips, size=(VIDEO_WIDTH, VIDEO_HEIGHT))
-    final = final.set_duration(VIDEO_DURATION)
+    final = final.with_duration(VIDEO_DURATION)
 
     # Add voiceover
     voiceover = AudioFileClip(audio_path)
     if voiceover.duration > VIDEO_DURATION:
-        voiceover = voiceover.subclip(0, VIDEO_DURATION)
+        voiceover = voiceover.subclipped(0, VIDEO_DURATION)
 
-    final = final.set_audio(voiceover)
+    final = final.with_audio(voiceover)
 
     # Export
     Path(output_path).parent.mkdir(parents=True, exist_ok=True)
