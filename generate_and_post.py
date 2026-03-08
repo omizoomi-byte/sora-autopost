@@ -250,14 +250,14 @@ def build_video(facts_data: dict, video_path: str, audio_path: str, output_path:
     # Title
     title_clip = (TextClip(
         facts_data["title"].upper(),
-        fontsize=65,
+        font_size=65,
         color="white",
         font="DejaVu-Sans-Bold",
         stroke_color="black",
         stroke_width=3,
         method="caption",
         size=(VIDEO_WIDTH - 100, None),
-        align="center"
+        text_align="center"
     )
     .with_position(("center", 120))
     .with_duration(VIDEO_DURATION))
@@ -273,8 +273,8 @@ def build_video(facts_data: dict, video_path: str, audio_path: str, output_path:
 
         # Fact number
         num_clip = (TextClip(
-            f"FACT #{i+1}",
-            fontsize=55,
+            text=f"FACT #{i+1}",
+            font_size=55,
             color="#FFD700",
             font="DejaVu-Sans-Bold",
             stroke_color="black",
@@ -288,14 +288,14 @@ def build_video(facts_data: dict, video_path: str, audio_path: str, output_path:
         wrapped = textwrap.fill(fact, width=28)
         fact_clip = (TextClip(
             wrapped,
-            fontsize=FONT_SIZE,
+            font_size=FONT_SIZE,
             color="white",
             font="DejaVu-Sans-Bold",
             stroke_color="black",
             stroke_width=3,
             method="caption",
             size=(VIDEO_WIDTH - 80, None),
-            align="center"
+            text_align="center"
         )
         .with_position(("center", 750))
         .with_start(start_time)
@@ -305,8 +305,8 @@ def build_video(facts_data: dict, video_path: str, audio_path: str, output_path:
 
     # Outro
     outro_clip = (TextClip(
-        "FOLLOW FOR MORE! 🔥",
-        fontsize=72,
+        text="FOLLOW FOR MORE!",
+        font_size=72,
         color="#FFD700",
         font="DejaVu-Sans-Bold",
         stroke_color="black",
