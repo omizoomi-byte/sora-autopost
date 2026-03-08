@@ -34,7 +34,7 @@ from datetime import datetime
 from gtts import gTTS
 from moviepy import (
     VideoFileClip, AudioFileClip, CompositeVideoClip,
-    TextClip, concatenate_audioclips, ColorClip
+    TextClip, concatenate_audioclips, ColorClip, concatenate_videoclips
 )
 import moviepy.video.fx as vfx
 from moviepy.video.fx import Resize
@@ -237,13 +237,11 @@ def build_video(facts_data: dict, video_path: str, audio_path: str, output_path:
     # Loop background video to fill duration
     if bg.duration < VIDEO_DURATION:
         loops = int(VIDEO_DURATION / bg.duration) + 1
-        from moviepy import concatenate_videoclips
-        bg = concatenate_videoclips([bg] * loops)
+                bg = concatenate_videoclips([bg] * loops)
     bg = bg.subclipped(0, VIDEO_DURATION)
 
     # Darken background for readability
-    from moviepy.editor import ColorClip
-    overlay = ColorClip(size=(VIDEO_WIDTH, VIDEO_HEIGHT), color=(0, 0, 0), duration=VIDEO_DURATION)
+        overlay = ColorClip(size=(VIDEO_WIDTH, VIDEO_HEIGHT), color=(0, 0, 0), duration=VIDEO_DURATION)
     overlay = overlay.with_effects([vfx.MultiplyColor(0.55)])
 
     # Build text clips
