@@ -241,8 +241,8 @@ def build_video(facts_data: dict, video_path: str, audio_path: str, output_path:
     bg = bg.subclipped(0, VIDEO_DURATION)
 
     # Darken background for readability
-    overlay = ColorClip(size=(VIDEO_WIDTH, VIDEO_HEIGHT), color=(0, 0, 0), duration=VIDEO_DURATION)
-    overlay = overlay.with_effects([vfx.MultiplyColor(0.55)])
+    overlay = (ColorClip(size=(VIDEO_WIDTH, VIDEO_HEIGHT), color=(0, 0, 0), duration=VIDEO_DURATION)
+               .with_opacity(0.5))
 
     # Build text clips
     clips = [bg, overlay]
