@@ -252,7 +252,7 @@ def build_video(facts_data: dict, video_path: str, audio_path: str, output_path:
             text=text,
             font_size=size,
             color=color,
-            font="DejaVu-Sans-Bold",
+            font="/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
             stroke_color="black",
             stroke_width=2,
             method="caption",
