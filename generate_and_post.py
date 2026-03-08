@@ -247,75 +247,33 @@ def build_video(facts_data: dict, video_path: str, audio_path: str, output_path:
     # Build text clips
     clips = [bg, overlay]
 
-    # Title
-    title_clip = (TextClip(
-        facts_data["title"].upper(),
-        font_size=65,
-        color="white",
-        font="DejaVu-Sans-Bold",
-        stroke_color="black",
-        stroke_width=3,
-        method="caption",
-        size=(VIDEO_WIDTH - 100, None),
-        text_align="center"
-    )
-    .with_position(("center", 120))
-    .with_duration(VIDEO_DURATION))
-    clips.append(title_clip)
-
-    # Fact number emoji map
-    emojis = ["1️⃣", "2️⃣", "3️⃣", "4️⃣", "5️⃣"]
-
-    # Each fact appears one by one
-    for i, fact in enumerate(facts_data["facts"]):
-        start_time = 2 + (i * FACT_DISPLAY_TIME)
-        duration = FACT_DISPLAY_TIME
-
-        # Fact number
-        num_clip = (TextClip(
-            text=f"FACT #{i+1}",
-            font_size=55,
-            color="#FFD700",
+    def make_text(text, size, color, y, duration, start=0):
+        return (TextClip(
+            text=text,
+            font_size=size,
+            color=color,
             font="DejaVu-Sans-Bold",
             stroke_color="black",
             stroke_width=2,
-        )
-        .with_position(("center", 650))
-        .with_start(start_time)
-        .with_duration(duration))
-
-        # Fact text
-        wrapped = textwrap.fill(fact, width=28)
-        fact_clip = (TextClip(
-            wrapped,
-            font_size=FONT_SIZE,
-            color="white",
-            font="DejaVu-Sans-Bold",
-            stroke_color="black",
-            stroke_width=3,
             method="caption",
             size=(VIDEO_WIDTH - 80, None),
             text_align="center"
         )
-        .with_position(("center", 750))
-        .with_start(start_time)
+        .with_position(("center", y))
+        .with_start(start)
         .with_duration(duration))
 
-        clips.extend([num_clip, fact_clip])
+    # Title
+    clips.append(make_text(facts_data["title"].upper(), 65, "white", 120, VIDEO_DURATION))
+
+    # Each fact appears one by one
+    for i, fact in enumerate(facts_data["facts"]):
+        start_time = 2 + (i * FACT_DISPLAY_TIME)
+        clips.append(make_text(f"FACT #{i+1}", 55, "#FFD700", 650, FACT_DISPLAY_TIME, start_time))
+        clips.append(make_text(textwrap.fill(fact, width=28), FONT_SIZE, "white", 750, FACT_DISPLAY_TIME, start_time))
 
     # Outro
-    outro_clip = (TextClip(
-        text="FOLLOW FOR MORE!",
-        font_size=72,
-        color="#FFD700",
-        font="DejaVu-Sans-Bold",
-        stroke_color="black",
-        stroke_width=3,
-    )
-    .with_position(("center", 1600))
-    .with_start(VIDEO_DURATION - 4)
-    .with_duration(4))
-    clips.append(outro_clip)
+    clips.append(make_text("FOLLOW FOR MORE!", 72, "#FFD700", 1600, 4, VIDEO_DURATION - 4))
 
     # Composite all clips
     final = CompositeVideoClip(clips, size=(VIDEO_WIDTH, VIDEO_HEIGHT))
