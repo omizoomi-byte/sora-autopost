@@ -430,7 +430,7 @@ def run_daily():
 
         # Step 3: Generate voiceover
         audio_path = f"{OUTPUT_DIR}/voice_{timestamp}.mp3"
-        generate_voiceover(facts_data, audio_path)
+        audio_path, timings = generate_voiceover(facts_data, audio_path)
 
         # Step 4: Build video
         output_path = f"{OUTPUT_DIR}/short_{timestamp}.mp4"
