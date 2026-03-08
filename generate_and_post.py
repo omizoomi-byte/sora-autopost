@@ -199,27 +199,58 @@ def fetch_pexels_video(search_term: str, output_path: str) -> str:
 # ─────────────────────────────────────────────
 # STEP 3: GENERATE VOICEOVER
 # ─────────────────────────────────────────────
-def generate_voiceover(facts_data: dict, output_path: str) -> str:
+def generate_voiceover(facts_data: dict, output_path: str):
     log.info("🎙️ Generating voiceover...")
 
-    # Build the script
-    script = f"{facts_data['title']}. "
-    for i, fact in enumerate(facts_data["facts"], 1):
-        script += f"Fact {i}. {fact} "
+    async def _gen_clip(text, path):
+        communicate = edge_tts.Communicate(text, voice="en-US-GuyNeural")
+        await communicate.save(path)
 
-    async def _gen():
-        communicate = edge_tts.Communicate(script, voice="en-US-GuyNeural")
-        await communicate.save(output_path)
-    asyncio.run(_gen())
+    # Generate title audio
+    title_path = output_path.replace(".mp3", "_title.mp3")
+    asyncio.run(_gen_clip(facts_data["title"] + ".", title_path))
+
+    # Generate each fact audio separately
+    fact_paths = []
+    for i, fact in enumerate(facts_data["facts"], 1):
+        p = output_path.replace(".mp3", f"_fact{i}.mp3")
+        asyncio.run(_gen_clip(f"Fact {i}. {fact}", p))
+        fact_paths.append(p)
+
+    # Combine all into one file and get timing
+    from pydub import AudioSegment
+    silence = AudioSegment.silent(duration=400)  # 0.4s gap between facts
+
+    combined = AudioSegment.from_mp3(title_path) + silence
+    timings = []  # (start_ms, duration_ms) for each fact
+    for p in fact_paths:
+        seg = AudioSegment.from_mp3(p)
+        start_ms = len(combined)
+        combined += seg + silence
+        timings.append((start_ms, len(seg)))
+
+    combined.export(output_path, format="mp3")
     log.info(f"✅ Voiceover saved: {output_path}")
-    return output_path
+
+    # Clean up individual clips
+    import os
+    for p in [title_path] + fact_paths:
+        try: os.remove(p)
+        except: pass
+
+    return output_path, timings
 
 
 # ─────────────────────────────────────────────
 # STEP 4: BUILD THE VIDEO
 # ─────────────────────────────────────────────
-def build_video(facts_data: dict, video_path: str, audio_path: str, output_path: str) -> str:
+def build_video(facts_data: dict, video_path: str, audio_path: str, output_path: str, timings: list) -> str:
     log.info("🎞️ Building video...")
+
+    # Load audio to get total duration
+    from pydub import AudioSegment
+    audio_seg = AudioSegment.from_mp3(audio_path)
+    total_duration = len(audio_seg) / 1000.0 + 2  # add 2s buffer at end
 
     # Load and prepare background video
     bg = VideoFileClip(video_path)
@@ -238,13 +269,13 @@ def build_video(facts_data: dict, video_path: str, audio_path: str, output_path:
         bg = bg.with_effects([vfx.Crop(y1=y_center - VIDEO_HEIGHT/2, y2=y_center + VIDEO_HEIGHT/2)])
 
     # Loop background video to fill duration
-    if bg.duration < VIDEO_DURATION:
-        loops = int(VIDEO_DURATION / bg.duration) + 1
+    if bg.duration < total_duration:
+        loops = int(total_duration / bg.duration) + 1
         bg = concatenate_videoclips([bg] * loops)
-    bg = bg.subclipped(0, VIDEO_DURATION)
+    bg = bg.subclipped(0, total_duration)
 
     # Darken background for readability
-    overlay = (ColorClip(size=(VIDEO_WIDTH, VIDEO_HEIGHT), color=(0, 0, 0), duration=VIDEO_DURATION)
+    overlay = (ColorClip(size=(VIDEO_WIDTH, VIDEO_HEIGHT), color=(0, 0, 0), duration=total_duration)
                .with_opacity(0.5))
 
     # Build text clips
@@ -266,26 +297,27 @@ def build_video(facts_data: dict, video_path: str, audio_path: str, output_path:
         .with_start(start)
         .with_duration(duration))
 
-    # Title
-    clips.append(make_text(facts_data["title"].upper(), 65, "white", 120, VIDEO_DURATION))
+    # Title shown for the whole video
+    clips.append(make_text(facts_data["title"].upper(), 65, "white", 120, total_duration))
 
-    # Each fact appears one by one
+    # Each fact text synced to audio timing
     for i, fact in enumerate(facts_data["facts"]):
-        start_time = 2 + (i * FACT_DISPLAY_TIME)
-        clips.append(make_text(f"FACT #{i+1}", 55, "#FFD700", 650, FACT_DISPLAY_TIME, start_time))
-        clips.append(make_text(textwrap.fill(fact, width=28), FONT_SIZE, "white", 750, FACT_DISPLAY_TIME, start_time))
+        start_s = timings[i][0] / 1000.0
+        dur_s = timings[i][1] / 1000.0 + 0.3  # slight overlap so text doesn't vanish too early
+        clips.append(make_text(f"FACT #{i+1}", 55, "#FFD700", 650, dur_s, start_s))
+        clips.append(make_text(textwrap.fill(fact, width=28), FONT_SIZE, "white", 750, dur_s, start_s))
 
     # Outro
-    clips.append(make_text("FOLLOW FOR MORE!", 72, "#FFD700", 1600, 4, VIDEO_DURATION - 4))
+    clips.append(make_text("FOLLOW FOR MORE!", 72, "#FFD700", 1600, 3, total_duration - 3))
 
     # Composite all clips
     final = CompositeVideoClip(clips, size=(VIDEO_WIDTH, VIDEO_HEIGHT))
-    final = final.with_duration(VIDEO_DURATION)
+    final = final.with_duration(total_duration)
 
     # Add voiceover
     voiceover = AudioFileClip(audio_path)
-    if voiceover.duration > VIDEO_DURATION:
-        voiceover = voiceover.subclipped(0, VIDEO_DURATION)
+    if voiceover.duration > total_duration:
+        voiceover = voiceover.subclipped(0, total_duration)
 
     final = final.with_audio(voiceover)
 
@@ -402,7 +434,7 @@ def run_daily():
 
         # Step 4: Build video
         output_path = f"{OUTPUT_DIR}/short_{timestamp}.mp4"
-        build_video(facts_data, video_path, audio_path, output_path)
+        build_video(facts_data, video_path, audio_path, output_path, timings)
 
         # Step 5: Upload to YouTube
         result = upload_to_youtube(output_path, facts_data)
