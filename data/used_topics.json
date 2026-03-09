@@ -3,7 +3,8 @@
     "Mount Everest",
     "Mars",
     "World War II",
-    "wild animals"
+    "wild animals",
+    "world records"
   ],
   "posted": [
     {
@@ -29,7 +30,13 @@
       "title": "5 Wild Facts About Wild Animals",
       "video_id": "g7sArOXSwso",
       "posted_at": "2026-03-08T13:19:07.568108"
+    },
+    {
+      "topic": "world records",
+      "title": "5 Wild Facts About World Records",
+      "video_id": "qEEbSZgphX4",
+      "posted_at": "2026-03-09T11:14:51.421415"
     }
   ],
-  "total_posted": 4
+  "total_posted": 5
 }
