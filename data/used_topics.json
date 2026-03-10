@@ -4,7 +4,8 @@
     "Mars",
     "World War II",
     "wild animals",
-    "world records"
+    "world records",
+    "cats"
   ],
   "posted": [
     {
@@ -36,7 +37,13 @@
       "title": "5 Wild Facts About World Records",
       "video_id": "qEEbSZgphX4",
       "posted_at": "2026-03-09T11:14:51.421415"
+    },
+    {
+      "topic": "cats",
+      "title": "5 Wild Facts About Cats",
+      "video_id": "D8ItOVeY8Gw",
+      "posted_at": "2026-03-10T11:11:43.282038"
     }
   ],
-  "total_posted": 5
+  "total_posted": 6
 }
