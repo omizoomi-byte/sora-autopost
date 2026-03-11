@@ -5,7 +5,8 @@
     "World War II",
     "wild animals",
     "world records",
-    "cats"
+    "cats",
+    "the Arctic"
   ],
   "posted": [
     {
@@ -43,7 +44,13 @@
       "title": "5 Wild Facts About Cats",
       "video_id": "D8ItOVeY8Gw",
       "posted_at": "2026-03-10T11:11:43.282038"
+    },
+    {
+      "topic": "the Arctic",
+      "title": "5 Wild Facts About The Arctic",
+      "video_id": "zASDV52KXqE",
+      "posted_at": "2026-03-11T11:14:09.916438"
     }
   ],
-  "total_posted": 6
+  "total_posted": 7
 }
