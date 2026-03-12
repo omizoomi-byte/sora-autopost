@@ -6,7 +6,8 @@
     "wild animals",
     "world records",
     "cats",
-    "the Arctic"
+    "the Arctic",
+    "the Roman Empire"
   ],
   "posted": [
     {
@@ -50,7 +51,13 @@
       "title": "5 Wild Facts About The Arctic",
       "video_id": "zASDV52KXqE",
       "posted_at": "2026-03-11T11:14:09.916438"
+    },
+    {
+      "topic": "the Roman Empire",
+      "title": "5 Wild Facts About The Roman Empire",
+      "video_id": "-axHQZKNJzQ",
+      "posted_at": "2026-03-12T11:10:51.174892"
     }
   ],
-  "total_posted": 7
+  "total_posted": 8
 }
