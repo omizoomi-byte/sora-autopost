@@ -7,7 +7,8 @@
     "world records",
     "cats",
     "the Arctic",
-    "the Roman Empire"
+    "the Roman Empire",
+    "football/soccer"
   ],
   "posted": [
     {
@@ -57,7 +58,13 @@
       "title": "5 Wild Facts About The Roman Empire",
       "video_id": "-axHQZKNJzQ",
       "posted_at": "2026-03-12T11:10:51.174892"
+    },
+    {
+      "topic": "football/soccer",
+      "title": "5 Wild Facts About Football/Soccer",
+      "video_id": "ZJRzgC0wRxg",
+      "posted_at": "2026-03-13T11:09:26.996961"
     }
   ],
-  "total_posted": 8
+  "total_posted": 9
 }
