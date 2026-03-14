@@ -8,7 +8,8 @@
     "cats",
     "the Arctic",
     "the Roman Empire",
-    "football/soccer"
+    "football/soccer",
+    "lions"
   ],
   "posted": [
     {
@@ -64,7 +65,13 @@
       "title": "5 Wild Facts About Football/Soccer",
       "video_id": "ZJRzgC0wRxg",
       "posted_at": "2026-03-13T11:09:26.996961"
+    },
+    {
+      "topic": "lions",
+      "title": "5 Wild Facts About Lions",
+      "video_id": "7zAUwvwK2BM",
+      "posted_at": "2026-03-14T10:05:22.502918"
     }
   ],
-  "total_posted": 9
+  "total_posted": 10
 }
