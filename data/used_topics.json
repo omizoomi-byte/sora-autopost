@@ -9,7 +9,8 @@
     "the Arctic",
     "the Roman Empire",
     "football/soccer",
-    "lions"
+    "lions",
+    "pizza"
   ],
   "posted": [
     {
@@ -71,7 +72,13 @@
       "title": "5 Wild Facts About Lions",
       "video_id": "7zAUwvwK2BM",
       "posted_at": "2026-03-14T10:05:22.502918"
+    },
+    {
+      "topic": "pizza",
+      "title": "5 Wild Facts About Pizza",
+      "video_id": "pHcdPfsk324",
+      "posted_at": "2026-03-15T10:07:37.455224"
     }
   ],
-  "total_posted": 10
+  "total_posted": 11
 }
