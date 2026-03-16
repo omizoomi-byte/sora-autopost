@@ -10,7 +10,8 @@
     "the Roman Empire",
     "football/soccer",
     "lions",
-    "pizza"
+    "pizza",
+    "famous inventions"
   ],
   "posted": [
     {
@@ -78,7 +79,13 @@
       "title": "5 Wild Facts About Pizza",
       "video_id": "pHcdPfsk324",
       "posted_at": "2026-03-15T10:07:37.455224"
+    },
+    {
+      "topic": "famous inventions",
+      "title": "5 Wild Facts About Famous Inventions",
+      "video_id": "Rh67jCPSknY",
+      "posted_at": "2026-03-16T11:43:39.357874"
     }
   ],
-  "total_posted": 11
+  "total_posted": 12
 }
