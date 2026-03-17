@@ -11,7 +11,8 @@
     "football/soccer",
     "lions",
     "pizza",
-    "famous inventions"
+    "famous inventions",
+    "the Sahara desert"
   ],
   "posted": [
     {
@@ -85,7 +86,13 @@
       "title": "5 Wild Facts About Famous Inventions",
       "video_id": "Rh67jCPSknY",
       "posted_at": "2026-03-16T11:43:39.357874"
+    },
+    {
+      "topic": "the Sahara desert",
+      "title": "5 Wild Facts About The Sahara Desert",
+      "video_id": "sNWWs18sORY",
+      "posted_at": "2026-03-17T11:39:53.645253"
     }
   ],
-  "total_posted": 12
+  "total_posted": 13
 }
