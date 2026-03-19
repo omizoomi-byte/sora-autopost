@@ -13,7 +13,8 @@
     "pizza",
     "famous inventions",
     "the Sahara desert",
-    "Premier League football"
+    "Premier League football",
+    "dogs"
   ],
   "posted": [
     {
@@ -99,7 +100,13 @@
       "title": "5 Wild Facts About Premier League Football",
       "video_id": "4Uq3Pys6xbw",
       "posted_at": "2026-03-18T11:41:57.778939"
+    },
+    {
+      "topic": "dogs",
+      "title": "5 Wild Facts About Dogs",
+      "video_id": "JWzxXErv7xE",
+      "posted_at": "2026-03-19T11:16:30.966157"
     }
   ],
-  "total_posted": 14
+  "total_posted": 15
 }
