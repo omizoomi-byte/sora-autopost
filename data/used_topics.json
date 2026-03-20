@@ -14,7 +14,8 @@
     "famous inventions",
     "the Sahara desert",
     "Premier League football",
-    "dogs"
+    "dogs",
+    "Olympic Games"
   ],
   "posted": [
     {
@@ -106,7 +107,13 @@
       "title": "5 Wild Facts About Dogs",
       "video_id": "JWzxXErv7xE",
       "posted_at": "2026-03-19T11:16:30.966157"
+    },
+    {
+      "topic": "Olympic Games",
+      "title": "5 Wild Facts About Olympic Games",
+      "video_id": "ZQiDsuRx6Z0",
+      "posted_at": "2026-03-20T11:05:47.137523"
     }
   ],
-  "total_posted": 15
+  "total_posted": 16
 }
