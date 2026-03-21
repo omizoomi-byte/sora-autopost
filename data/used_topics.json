@@ -15,7 +15,8 @@
     "the Sahara desert",
     "Premier League football",
     "dogs",
-    "Olympic Games"
+    "Olympic Games",
+    "space exploration"
   ],
   "posted": [
     {
@@ -113,7 +114,13 @@
       "title": "5 Wild Facts About Olympic Games",
       "video_id": "ZQiDsuRx6Z0",
       "posted_at": "2026-03-20T11:05:47.137523"
+    },
+    {
+      "topic": "space exploration",
+      "title": "5 Wild Facts About Space Exploration",
+      "video_id": "guqck9Uyd9M",
+      "posted_at": "2026-03-21T10:04:03.110866"
     }
   ],
-  "total_posted": 16
+  "total_posted": 17
 }
