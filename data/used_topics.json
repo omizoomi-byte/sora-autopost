@@ -16,7 +16,8 @@
     "Premier League football",
     "dogs",
     "Olympic Games",
-    "space exploration"
+    "space exploration",
+    "the Amazon river"
   ],
   "posted": [
     {
@@ -120,7 +121,13 @@
       "title": "5 Wild Facts About Space Exploration",
       "video_id": "guqck9Uyd9M",
       "posted_at": "2026-03-21T10:04:03.110866"
+    },
+    {
+      "topic": "the Amazon river",
+      "title": "5 Wild Facts About The Amazon River",
+      "video_id": "cG_B8yda7fA",
+      "posted_at": "2026-03-22T10:05:18.321835"
     }
   ],
-  "total_posted": 17
+  "total_posted": 18
 }
