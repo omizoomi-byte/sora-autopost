@@ -17,7 +17,8 @@
     "dogs",
     "Olympic Games",
     "space exploration",
-    "the Amazon river"
+    "the Amazon river",
+    "gold"
   ],
   "posted": [
     {
@@ -127,7 +128,13 @@
       "title": "5 Wild Facts About The Amazon River",
       "video_id": "cG_B8yda7fA",
       "posted_at": "2026-03-22T10:05:18.321835"
+    },
+    {
+      "topic": "gold",
+      "title": "5 Wild Facts About Gold",
+      "video_id": "vBVefuz4pxA",
+      "posted_at": "2026-03-23T11:37:26.745502"
     }
   ],
-  "total_posted": 18
+  "total_posted": 19
 }
