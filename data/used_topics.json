@@ -18,7 +18,8 @@
     "Olympic Games",
     "space exploration",
     "the Amazon river",
-    "gold"
+    "gold",
+    "penguins"
   ],
   "posted": [
     {
@@ -134,7 +135,13 @@
       "title": "5 Wild Facts About Gold",
       "video_id": "vBVefuz4pxA",
       "posted_at": "2026-03-23T11:37:26.745502"
+    },
+    {
+      "topic": "penguins",
+      "title": "5 Wild Facts About Penguins",
+      "video_id": "L2Ya5W1gnRg",
+      "posted_at": "2026-03-24T11:38:48.726053"
     }
   ],
-  "total_posted": 19
+  "total_posted": 20
 }
