@@ -19,7 +19,8 @@
     "space exploration",
     "the Amazon river",
     "gold",
-    "penguins"
+    "penguins",
+    "extreme weather"
   ],
   "posted": [
     {
@@ -141,7 +142,13 @@
       "title": "5 Wild Facts About Penguins",
       "video_id": "L2Ya5W1gnRg",
       "posted_at": "2026-03-24T11:38:48.726053"
+    },
+    {
+      "topic": "extreme weather",
+      "title": "5 Wild Facts About Extreme Weather",
+      "video_id": "ZtrGso6hizU",
+      "posted_at": "2026-03-25T11:32:32.685537"
     }
   ],
-  "total_posted": 20
+  "total_posted": 21
 }
