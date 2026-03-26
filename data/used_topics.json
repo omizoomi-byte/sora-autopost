@@ -20,7 +20,8 @@
     "the Amazon river",
     "gold",
     "penguins",
-    "extreme weather"
+    "extreme weather",
+    "bananas"
   ],
   "posted": [
     {
@@ -148,7 +149,13 @@
       "title": "5 Wild Facts About Extreme Weather",
       "video_id": "ZtrGso6hizU",
       "posted_at": "2026-03-25T11:32:32.685537"
+    },
+    {
+      "topic": "bananas",
+      "title": "5 Wild Facts About Bananas",
+      "video_id": "t8-5xA16aWQ",
+      "posted_at": "2026-03-26T11:41:48.722950"
     }
   ],
-  "total_posted": 21
+  "total_posted": 22
 }
