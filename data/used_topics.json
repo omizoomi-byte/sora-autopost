@@ -22,7 +22,8 @@
     "penguins",
     "extreme weather",
     "bananas",
-    "the moon"
+    "the moon",
+    "deep sea creatures"
   ],
   "posted": [
     {
@@ -162,7 +163,13 @@
       "title": "5 Wild Facts About The Moon",
       "video_id": "DISMqTTLs8o",
       "posted_at": "2026-03-27T11:34:21.749859"
+    },
+    {
+      "topic": "deep sea creatures",
+      "title": "5 Wild Facts About Deep Sea Creatures",
+      "video_id": "gK43QI6NLxk",
+      "posted_at": "2026-03-28T10:09:03.547504"
     }
   ],
-  "total_posted": 23
+  "total_posted": 24
 }
