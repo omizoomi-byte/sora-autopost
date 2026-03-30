@@ -24,7 +24,8 @@
     "bananas",
     "the moon",
     "deep sea creatures",
-    "ancient Egypt"
+    "ancient Egypt",
+    "famous scientists"
   ],
   "posted": [
     {
@@ -176,7 +177,13 @@
       "title": "5 Wild Facts About Ancient Egypt",
       "video_id": "pl0vcCpzACM",
       "posted_at": "2026-03-29T10:11:35.563205"
+    },
+    {
+      "topic": "famous scientists",
+      "title": "5 Wild Facts About Famous Scientists",
+      "video_id": "bjcHCrfbj_s",
+      "posted_at": "2026-03-30T12:11:24.053049"
     }
   ],
-  "total_posted": 25
+  "total_posted": 26
 }
