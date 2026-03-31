@@ -25,7 +25,8 @@
     "the moon",
     "deep sea creatures",
     "ancient Egypt",
-    "famous scientists"
+    "famous scientists",
+    "the Great Wall of China"
   ],
   "posted": [
     {
@@ -183,7 +184,13 @@
       "title": "5 Wild Facts About Famous Scientists",
       "video_id": "bjcHCrfbj_s",
       "posted_at": "2026-03-30T12:11:24.053049"
+    },
+    {
+      "topic": "the Great Wall of China",
+      "title": "5 Wild Facts About The Great Wall Of China",
+      "video_id": "LC3jwE815Uc",
+      "posted_at": "2026-03-31T11:42:02.686619"
     }
   ],
-  "total_posted": 26
+  "total_posted": 27
 }
