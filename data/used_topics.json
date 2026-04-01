@@ -26,7 +26,8 @@
     "deep sea creatures",
     "ancient Egypt",
     "famous scientists",
-    "the Great Wall of China"
+    "the Great Wall of China",
+    "black holes"
   ],
   "posted": [
     {
@@ -190,7 +191,13 @@
       "title": "5 Wild Facts About The Great Wall Of China",
       "video_id": "LC3jwE815Uc",
       "posted_at": "2026-03-31T11:42:02.686619"
+    },
+    {
+      "topic": "black holes",
+      "title": "5 Wild Facts About Black Holes",
+      "video_id": "DNeMtVry0ok",
+      "posted_at": "2026-04-01T12:06:04.363303"
     }
   ],
-  "total_posted": 27
+  "total_posted": 28
 }
