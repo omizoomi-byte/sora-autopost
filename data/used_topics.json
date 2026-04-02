@@ -27,7 +27,8 @@
     "ancient Egypt",
     "famous scientists",
     "the Great Wall of China",
-    "black holes"
+    "black holes",
+    "Formula 1 racing"
   ],
   "posted": [
     {
@@ -197,7 +198,13 @@
       "title": "5 Wild Facts About Black Holes",
       "video_id": "DNeMtVry0ok",
       "posted_at": "2026-04-01T12:06:04.363303"
+    },
+    {
+      "topic": "Formula 1 racing",
+      "title": "5 Wild Facts About Formula 1 Racing",
+      "video_id": "9z2ji0ntn2o",
+      "posted_at": "2026-04-02T11:39:21.503494"
     }
   ],
-  "total_posted": 28
+  "total_posted": 29
 }
