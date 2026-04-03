@@ -28,7 +28,8 @@
     "famous scientists",
     "the Great Wall of China",
     "black holes",
-    "Formula 1 racing"
+    "Formula 1 racing",
+    "the human brain"
   ],
   "posted": [
     {
@@ -204,7 +205,13 @@
       "title": "5 Wild Facts About Formula 1 Racing",
       "video_id": "9z2ji0ntn2o",
       "posted_at": "2026-04-02T11:39:21.503494"
+    },
+    {
+      "topic": "the human brain",
+      "title": "5 Wild Facts About The Human Brain",
+      "video_id": "0p6xfeUREe0",
+      "posted_at": "2026-04-03T11:31:23.302883"
     }
   ],
-  "total_posted": 29
+  "total_posted": 30
 }
