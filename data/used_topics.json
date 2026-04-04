@@ -29,7 +29,8 @@
     "the Great Wall of China",
     "black holes",
     "Formula 1 racing",
-    "the human brain"
+    "the human brain",
+    "volcanoes"
   ],
   "posted": [
     {
@@ -211,7 +212,13 @@
       "title": "5 Wild Facts About The Human Brain",
       "video_id": "0p6xfeUREe0",
       "posted_at": "2026-04-03T11:31:23.302883"
+    },
+    {
+      "topic": "volcanoes",
+      "title": "5 Wild Facts About Volcanoes",
+      "video_id": "DdbxoPLGhTY",
+      "posted_at": "2026-04-04T10:12:49.076857"
     }
   ],
-  "total_posted": 30
+  "total_posted": 31
 }
