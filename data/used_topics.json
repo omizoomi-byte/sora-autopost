@@ -30,7 +30,8 @@
     "black holes",
     "Formula 1 racing",
     "the human brain",
-    "volcanoes"
+    "volcanoes",
+    "famous artists"
   ],
   "posted": [
     {
@@ -218,7 +219,13 @@
       "title": "5 Wild Facts About Volcanoes",
       "video_id": "DdbxoPLGhTY",
       "posted_at": "2026-04-04T10:12:49.076857"
+    },
+    {
+      "topic": "famous artists",
+      "title": "5 Wild Facts About Famous Artists",
+      "video_id": "S_zKzJsee8s",
+      "posted_at": "2026-04-05T11:04:49.876364"
     }
   ],
-  "total_posted": 31
+  "total_posted": 32
 }
