@@ -32,7 +32,8 @@
     "the human brain",
     "volcanoes",
     "famous artists",
-    "coffee"
+    "coffee",
+    "chocolate"
   ],
   "posted": [
     {
@@ -232,7 +233,13 @@
       "title": "5 Wild Facts About Coffee",
       "video_id": "jCpDiYVyn-M",
       "posted_at": "2026-04-06T11:42:03.902152"
+    },
+    {
+      "topic": "chocolate",
+      "title": "5 Wild Facts About Chocolate",
+      "video_id": "4a947eLROGo",
+      "posted_at": "2026-04-07T10:26:53.637924"
     }
   ],
-  "total_posted": 33
+  "total_posted": 34
 }
