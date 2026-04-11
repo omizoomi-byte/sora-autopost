@@ -33,7 +33,8 @@
     "volcanoes",
     "famous artists",
     "coffee",
-    "chocolate"
+    "chocolate",
+    "the solar system"
   ],
   "posted": [
     {
@@ -239,7 +240,13 @@
       "title": "5 Wild Facts About Chocolate",
       "video_id": "4a947eLROGo",
       "posted_at": "2026-04-07T10:26:53.637924"
+    },
+    {
+      "topic": "the solar system",
+      "title": "5 Wild Facts About The Solar System",
+      "video_id": "LkjD8hnwuGE",
+      "posted_at": "2026-04-11T09:42:50.886987"
     }
   ],
-  "total_posted": 34
+  "total_posted": 35
 }
