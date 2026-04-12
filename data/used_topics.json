@@ -34,7 +34,8 @@
     "famous artists",
     "coffee",
     "chocolate",
-    "the solar system"
+    "the solar system",
+    "honey bees"
   ],
   "posted": [
     {
@@ -246,7 +247,13 @@
       "title": "5 Wild Facts About The Solar System",
       "video_id": "LkjD8hnwuGE",
       "posted_at": "2026-04-11T09:42:50.886987"
+    },
+    {
+      "topic": "honey bees",
+      "title": "5 Wild Facts About Honey Bees",
+      "video_id": "PUxH65FoHCM",
+      "posted_at": "2026-04-12T09:50:51.650762"
     }
   ],
-  "total_posted": 35
+  "total_posted": 36
 }
