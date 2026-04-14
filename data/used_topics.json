@@ -35,7 +35,8 @@
     "coffee",
     "chocolate",
     "the solar system",
-    "honey bees"
+    "honey bees",
+    "languages"
   ],
   "posted": [
     {
@@ -253,7 +254,13 @@
       "title": "5 Wild Facts About Honey Bees",
       "video_id": "PUxH65FoHCM",
       "posted_at": "2026-04-12T09:50:51.650762"
+    },
+    {
+      "topic": "languages",
+      "title": "5 Wild Facts About Languages",
+      "video_id": "Ru1jhZam0-s",
+      "posted_at": "2026-04-14T10:18:25.892781"
     }
   ],
-  "total_posted": 36
+  "total_posted": 37
 }
