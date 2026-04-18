@@ -37,7 +37,8 @@
     "the solar system",
     "honey bees",
     "languages",
-    "the ocean"
+    "the ocean",
+    "elephants"
   ],
   "posted": [
     {
@@ -267,7 +268,13 @@
       "title": "5 Wild Facts About The Ocean",
       "video_id": "78CQdb6XvbQ",
       "posted_at": "2026-04-15T10:23:22.119545"
+    },
+    {
+      "topic": "elephants",
+      "title": "5 Wild Facts About Elephants",
+      "video_id": "-x88xGyPWOU",
+      "posted_at": "2026-04-18T09:53:27.757777"
     }
   ],
-  "total_posted": 38
+  "total_posted": 39
 }
