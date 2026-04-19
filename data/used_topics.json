@@ -38,7 +38,8 @@
     "honey bees",
     "languages",
     "the ocean",
-    "elephants"
+    "elephants",
+    "sharks"
   ],
   "posted": [
     {
@@ -274,7 +275,13 @@
       "title": "5 Wild Facts About Elephants",
       "video_id": "-x88xGyPWOU",
       "posted_at": "2026-04-18T09:53:27.757777"
+    },
+    {
+      "topic": "sharks",
+      "title": "5 Wild Facts About Sharks",
+      "video_id": "3EiTi8irFS4",
+      "posted_at": "2026-04-19T09:49:21.292073"
     }
   ],
-  "total_posted": 39
+  "total_posted": 40
 }
