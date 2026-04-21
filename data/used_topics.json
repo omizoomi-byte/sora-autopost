@@ -39,7 +39,8 @@
     "languages",
     "the ocean",
     "elephants",
-    "sharks"
+    "sharks",
+    "dinosaurs"
   ],
   "posted": [
     {
@@ -281,7 +282,13 @@
       "title": "5 Wild Facts About Sharks",
       "video_id": "3EiTi8irFS4",
       "posted_at": "2026-04-19T09:49:21.292073"
+    },
+    {
+      "topic": "dinosaurs",
+      "title": "5 Wild Facts About Dinosaurs",
+      "video_id": "sBg3QmQirek",
+      "posted_at": "2026-04-21T10:21:22.686397"
     }
   ],
-  "total_posted": 40
+  "total_posted": 41
 }
