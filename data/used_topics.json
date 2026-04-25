@@ -40,7 +40,8 @@
     "the ocean",
     "elephants",
     "sharks",
-    "dinosaurs"
+    "dinosaurs",
+    "ancient Rome"
   ],
   "posted": [
     {
@@ -288,7 +289,13 @@
       "title": "5 Wild Facts About Dinosaurs",
       "video_id": "sBg3QmQirek",
       "posted_at": "2026-04-21T10:21:22.686397"
+    },
+    {
+      "topic": "ancient Rome",
+      "title": "5 Wild Facts About Ancient Rome",
+      "video_id": "32_JkFS-PY4",
+      "posted_at": "2026-04-25T09:58:19.244053"
     }
   ],
-  "total_posted": 41
+  "total_posted": 42
 }
