@@ -41,7 +41,8 @@
     "elephants",
     "sharks",
     "dinosaurs",
-    "ancient Rome"
+    "ancient Rome",
+    "the Amazon rainforest"
   ],
   "posted": [
     {
@@ -295,7 +296,13 @@
       "title": "5 Wild Facts About Ancient Rome",
       "video_id": "32_JkFS-PY4",
       "posted_at": "2026-04-25T09:58:19.244053"
+    },
+    {
+      "topic": "the Amazon rainforest",
+      "title": "5 Wild Facts About The Amazon Rainforest",
+      "video_id": "rRQjT5L7iUQ",
+      "posted_at": "2026-04-26T09:57:05.509482"
     }
   ],
-  "total_posted": 42
+  "total_posted": 43
 }
