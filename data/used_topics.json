@@ -42,7 +42,8 @@
     "sharks",
     "dinosaurs",
     "ancient Rome",
-    "the Amazon rainforest"
+    "the Amazon rainforest",
+    "diamonds"
   ],
   "posted": [
     {
@@ -302,7 +303,13 @@
       "title": "5 Wild Facts About The Amazon Rainforest",
       "video_id": "rRQjT5L7iUQ",
       "posted_at": "2026-04-26T09:57:05.509482"
+    },
+    {
+      "topic": "diamonds",
+      "title": "5 Wild Facts About Diamonds",
+      "video_id": "XwA5gPNHQNA",
+      "posted_at": "2026-04-28T11:11:01.997929"
     }
   ],
-  "total_posted": 43
+  "total_posted": 44
 }
