@@ -1,49 +1,6 @@
 {
   "used_topics": [
-    "Mount Everest",
-    "Mars",
-    "World War II",
-    "wild animals",
-    "world records",
-    "cats",
-    "the Arctic",
-    "the Roman Empire",
-    "football/soccer",
-    "lions",
-    "pizza",
-    "famous inventions",
-    "the Sahara desert",
-    "Premier League football",
-    "dogs",
-    "Olympic Games",
-    "space exploration",
-    "the Amazon river",
-    "gold",
-    "penguins",
-    "extreme weather",
-    "bananas",
-    "the moon",
-    "deep sea creatures",
-    "ancient Egypt",
-    "famous scientists",
-    "the Great Wall of China",
-    "black holes",
-    "Formula 1 racing",
-    "the human brain",
-    "volcanoes",
-    "famous artists",
-    "coffee",
-    "chocolate",
-    "the solar system",
-    "honey bees",
-    "languages",
-    "the ocean",
-    "elephants",
-    "sharks",
-    "dinosaurs",
-    "ancient Rome",
-    "the Amazon rainforest",
-    "diamonds"
+    "the Roman Empire"
   ],
   "posted": [
     {
@@ -309,7 +266,13 @@
       "title": "5 Wild Facts About Diamonds",
       "video_id": "XwA5gPNHQNA",
       "posted_at": "2026-04-28T11:11:01.997929"
+    },
+    {
+      "topic": "the Roman Empire",
+      "title": "5 Wild Facts About The Roman Empire",
+      "video_id": "t4xAmbV6dWQ",
+      "posted_at": "2026-04-30T11:01:58.257924"
     }
   ],
-  "total_posted": 44
+  "total_posted": 45
 }
