@@ -1,6 +1,7 @@
 {
   "used_topics": [
-    "the Roman Empire"
+    "the Roman Empire",
+    "famous artists"
   ],
   "posted": [
     {
@@ -272,7 +273,13 @@
       "title": "5 Wild Facts About The Roman Empire",
       "video_id": "t4xAmbV6dWQ",
       "posted_at": "2026-04-30T11:01:58.257924"
+    },
+    {
+      "topic": "famous artists",
+      "title": "5 Wild Facts About Famous Artists",
+      "video_id": "AxSOYeNoqxk",
+      "posted_at": "2026-05-01T10:28:50.386597"
     }
   ],
-  "total_posted": 45
+  "total_posted": 46
 }
