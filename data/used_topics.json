@@ -1,7 +1,8 @@
 {
   "used_topics": [
     "the Roman Empire",
-    "famous artists"
+    "famous artists",
+    "black holes"
   ],
   "posted": [
     {
@@ -279,7 +280,13 @@
       "title": "5 Wild Facts About Famous Artists",
       "video_id": "AxSOYeNoqxk",
       "posted_at": "2026-05-01T10:28:50.386597"
+    },
+    {
+      "topic": "black holes",
+      "title": "5 Wild Facts About Black Holes",
+      "video_id": "U9W1eDaZ3KY",
+      "posted_at": "2026-05-02T10:04:19.353852"
     }
   ],
-  "total_posted": 46
+  "total_posted": 47
 }
