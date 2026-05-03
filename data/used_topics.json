@@ -2,7 +2,8 @@
   "used_topics": [
     "the Roman Empire",
     "famous artists",
-    "black holes"
+    "black holes",
+    "the moon"
   ],
   "posted": [
     {
@@ -286,7 +287,13 @@
       "title": "5 Wild Facts About Black Holes",
       "video_id": "U9W1eDaZ3KY",
       "posted_at": "2026-05-02T10:04:19.353852"
+    },
+    {
+      "topic": "the moon",
+      "title": "5 Wild Facts About The Moon",
+      "video_id": "FIuP8tB1VdU",
+      "posted_at": "2026-05-03T10:06:24.074869"
     }
   ],
-  "total_posted": 47
+  "total_posted": 48
 }
