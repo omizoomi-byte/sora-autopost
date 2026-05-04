@@ -3,7 +3,8 @@
     "the Roman Empire",
     "famous artists",
     "black holes",
-    "the moon"
+    "the moon",
+    "the Amazon rainforest"
   ],
   "posted": [
     {
@@ -293,7 +294,13 @@
       "title": "5 Wild Facts About The Moon",
       "video_id": "FIuP8tB1VdU",
       "posted_at": "2026-05-03T10:06:24.074869"
+    },
+    {
+      "topic": "the Amazon rainforest",
+      "title": "5 Wild Facts About The Amazon Rainforest",
+      "video_id": "VayQHT1aYf8",
+      "posted_at": "2026-05-04T11:08:17.282343"
     }
   ],
-  "total_posted": 48
+  "total_posted": 49
 }
