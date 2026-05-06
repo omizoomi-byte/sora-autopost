@@ -4,7 +4,8 @@
     "famous artists",
     "black holes",
     "the moon",
-    "the Amazon rainforest"
+    "the Amazon rainforest",
+    "famous inventions"
   ],
   "posted": [
     {
@@ -300,7 +301,13 @@
       "title": "5 Wild Facts About The Amazon Rainforest",
       "video_id": "VayQHT1aYf8",
       "posted_at": "2026-05-04T11:08:17.282343"
+    },
+    {
+      "topic": "famous inventions",
+      "title": "5 Wild Facts About Famous Inventions",
+      "video_id": "l-eGWOXKe-Q",
+      "posted_at": "2026-05-06T11:10:52.882784"
     }
   ],
-  "total_posted": 49
+  "total_posted": 50
 }
