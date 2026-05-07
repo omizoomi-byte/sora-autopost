@@ -5,7 +5,8 @@
     "black holes",
     "the moon",
     "the Amazon rainforest",
-    "famous inventions"
+    "famous inventions",
+    "sharks"
   ],
   "posted": [
     {
@@ -307,7 +308,13 @@
       "title": "5 Wild Facts About Famous Inventions",
       "video_id": "l-eGWOXKe-Q",
       "posted_at": "2026-05-06T11:10:52.882784"
+    },
+    {
+      "topic": "sharks",
+      "title": "5 Wild Facts About Sharks",
+      "video_id": "Nl-U9BlqtEY",
+      "posted_at": "2026-05-07T11:14:20.509474"
     }
   ],
-  "total_posted": 50
+  "total_posted": 51
 }
