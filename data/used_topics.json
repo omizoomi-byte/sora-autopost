@@ -6,7 +6,8 @@
     "the moon",
     "the Amazon rainforest",
     "famous inventions",
-    "sharks"
+    "sharks",
+    "Mars"
   ],
   "posted": [
     {
@@ -314,7 +315,13 @@
       "title": "5 Wild Facts About Sharks",
       "video_id": "Nl-U9BlqtEY",
       "posted_at": "2026-05-07T11:14:20.509474"
+    },
+    {
+      "topic": "Mars",
+      "title": "5 Wild Facts About Mars",
+      "video_id": "0TdwcdDfq2g",
+      "posted_at": "2026-05-08T10:27:16.222932"
     }
   ],
-  "total_posted": 51
+  "total_posted": 52
 }
