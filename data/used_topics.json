@@ -8,7 +8,8 @@
     "famous inventions",
     "sharks",
     "Mars",
-    "the ocean"
+    "the ocean",
+    "the Arctic"
   ],
   "posted": [
     {
@@ -328,7 +329,13 @@
       "title": "5 Wild Facts About The Ocean",
       "video_id": "WAtJ4ljQ8ZQ",
       "posted_at": "2026-05-09T10:10:29.600091"
+    },
+    {
+      "topic": "the Arctic",
+      "title": "5 Wild Facts About The Arctic",
+      "video_id": "3t8zoR4tImQ",
+      "posted_at": "2026-05-10T10:17:07.390377"
     }
   ],
-  "total_posted": 53
+  "total_posted": 54
 }
