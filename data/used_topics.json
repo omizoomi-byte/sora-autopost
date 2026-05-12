@@ -9,7 +9,8 @@
     "sharks",
     "Mars",
     "the ocean",
-    "the Arctic"
+    "the Arctic",
+    "the Sahara desert"
   ],
   "posted": [
     {
@@ -335,7 +336,13 @@
       "title": "5 Wild Facts About The Arctic",
       "video_id": "3t8zoR4tImQ",
       "posted_at": "2026-05-10T10:17:07.390377"
+    },
+    {
+      "topic": "the Sahara desert",
+      "title": "5 Wild Facts About The Sahara Desert",
+      "video_id": "CebgppPrubo",
+      "posted_at": "2026-05-12T11:28:35.163445"
     }
   ],
-  "total_posted": 54
+  "total_posted": 55
 }
