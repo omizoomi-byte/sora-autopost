@@ -10,7 +10,8 @@
     "Mars",
     "the ocean",
     "the Arctic",
-    "the Sahara desert"
+    "the Sahara desert",
+    "space exploration"
   ],
   "posted": [
     {
@@ -342,7 +343,13 @@
       "title": "5 Wild Facts About The Sahara Desert",
       "video_id": "CebgppPrubo",
       "posted_at": "2026-05-12T11:28:35.163445"
+    },
+    {
+      "topic": "space exploration",
+      "title": "5 Wild Facts About Space Exploration",
+      "video_id": "o3xWeG7BLp8",
+      "posted_at": "2026-05-13T11:34:15.340629"
     }
   ],
-  "total_posted": 55
+  "total_posted": 56
 }
