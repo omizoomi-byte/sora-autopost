@@ -11,7 +11,8 @@
     "the ocean",
     "the Arctic",
     "the Sahara desert",
-    "space exploration"
+    "space exploration",
+    "the Amazon river"
   ],
   "posted": [
     {
@@ -349,7 +350,13 @@
       "title": "5 Wild Facts About Space Exploration",
       "video_id": "o3xWeG7BLp8",
       "posted_at": "2026-05-13T11:34:15.340629"
+    },
+    {
+      "topic": "the Amazon river",
+      "title": "5 Wild Facts About The Amazon River",
+      "video_id": "2YvYl_io6es",
+      "posted_at": "2026-05-14T11:16:34.486364"
     }
   ],
-  "total_posted": 56
+  "total_posted": 57
 }
