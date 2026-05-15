@@ -12,7 +12,8 @@
     "the Arctic",
     "the Sahara desert",
     "space exploration",
-    "the Amazon river"
+    "the Amazon river",
+    "pizza"
   ],
   "posted": [
     {
@@ -356,7 +357,13 @@
       "title": "5 Wild Facts About The Amazon River",
       "video_id": "2YvYl_io6es",
       "posted_at": "2026-05-14T11:16:34.486364"
+    },
+    {
+      "topic": "pizza",
+      "title": "5 Wild Facts About Pizza",
+      "video_id": "dQKX9cYigQQ",
+      "posted_at": "2026-05-15T11:27:01.874252"
     }
   ],
-  "total_posted": 57
+  "total_posted": 58
 }
