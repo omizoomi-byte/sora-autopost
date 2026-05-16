@@ -13,7 +13,8 @@
     "the Sahara desert",
     "space exploration",
     "the Amazon river",
-    "pizza"
+    "pizza",
+    "chocolate"
   ],
   "posted": [
     {
@@ -363,7 +364,13 @@
       "title": "5 Wild Facts About Pizza",
       "video_id": "dQKX9cYigQQ",
       "posted_at": "2026-05-15T11:27:01.874252"
+    },
+    {
+      "topic": "chocolate",
+      "title": "5 Wild Facts About Chocolate",
+      "video_id": "OciI0bs04R0",
+      "posted_at": "2026-05-16T10:18:06.280302"
     }
   ],
-  "total_posted": 58
+  "total_posted": 59
 }
