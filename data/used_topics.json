@@ -14,7 +14,8 @@
     "space exploration",
     "the Amazon river",
     "pizza",
-    "chocolate"
+    "chocolate",
+    "penguins"
   ],
   "posted": [
     {
@@ -370,7 +371,13 @@
       "title": "5 Wild Facts About Chocolate",
       "video_id": "OciI0bs04R0",
       "posted_at": "2026-05-16T10:18:06.280302"
+    },
+    {
+      "topic": "penguins",
+      "title": "5 Wild Facts About Penguins",
+      "video_id": "vG417ycaeB8",
+      "posted_at": "2026-05-17T10:25:18.932422"
     }
   ],
-  "total_posted": 59
+  "total_posted": 60
 }
