@@ -15,7 +15,8 @@
     "the Amazon river",
     "pizza",
     "chocolate",
-    "penguins"
+    "penguins",
+    "world records"
   ],
   "posted": [
     {
@@ -377,7 +378,13 @@
       "title": "5 Wild Facts About Penguins",
       "video_id": "vG417ycaeB8",
       "posted_at": "2026-05-17T10:25:18.932422"
+    },
+    {
+      "topic": "world records",
+      "title": "5 Wild Facts About World Records",
+      "video_id": "ERcQXUC02MY",
+      "posted_at": "2026-05-19T12:16:01.857239"
     }
   ],
-  "total_posted": 60
+  "total_posted": 61
 }
