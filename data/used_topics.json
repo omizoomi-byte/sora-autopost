@@ -17,7 +17,8 @@
     "chocolate",
     "penguins",
     "world records",
-    "lions"
+    "lions",
+    "gold"
   ],
   "posted": [
     {
@@ -391,7 +392,13 @@
       "title": "5 Wild Facts About Lions",
       "video_id": "pDqWvlGUeWw",
       "posted_at": "2026-05-21T12:17:31.024991"
+    },
+    {
+      "topic": "gold",
+      "title": "5 Wild Facts About Gold",
+      "video_id": "ZVmRAKSnP38",
+      "posted_at": "2026-05-22T11:50:23.143537"
     }
   ],
-  "total_posted": 62
+  "total_posted": 63
 }
