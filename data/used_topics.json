@@ -18,7 +18,8 @@
     "penguins",
     "world records",
     "lions",
-    "gold"
+    "gold",
+    "bananas"
   ],
   "posted": [
     {
@@ -398,7 +399,13 @@
       "title": "5 Wild Facts About Gold",
       "video_id": "ZVmRAKSnP38",
       "posted_at": "2026-05-22T11:50:23.143537"
+    },
+    {
+      "topic": "bananas",
+      "title": "5 Wild Facts About Bananas",
+      "video_id": "NgZo-JToYoE",
+      "posted_at": "2026-05-23T10:30:56.756442"
     }
   ],
-  "total_posted": 63
+  "total_posted": 64
 }
