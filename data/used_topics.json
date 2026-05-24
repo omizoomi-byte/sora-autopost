@@ -19,7 +19,8 @@
     "world records",
     "lions",
     "gold",
-    "bananas"
+    "bananas",
+    "coffee"
   ],
   "posted": [
     {
@@ -405,7 +406,13 @@
       "title": "5 Wild Facts About Bananas",
       "video_id": "NgZo-JToYoE",
       "posted_at": "2026-05-23T10:30:56.756442"
+    },
+    {
+      "topic": "coffee",
+      "title": "5 Wild Facts About Coffee",
+      "video_id": "Nwubxy-HiMQ",
+      "posted_at": "2026-05-24T10:48:34.432388"
     }
   ],
-  "total_posted": 64
+  "total_posted": 65
 }
