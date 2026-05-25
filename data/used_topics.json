@@ -20,7 +20,8 @@
     "lions",
     "gold",
     "bananas",
-    "coffee"
+    "coffee",
+    "cats"
   ],
   "posted": [
     {
@@ -412,7 +413,13 @@
       "title": "5 Wild Facts About Coffee",
       "video_id": "Nwubxy-HiMQ",
       "posted_at": "2026-05-24T10:48:34.432388"
+    },
+    {
+      "topic": "cats",
+      "title": "5 Wild Facts About Cats",
+      "video_id": "M4kvvStu4KE",
+      "posted_at": "2026-05-25T12:35:21.550565"
     }
   ],
-  "total_posted": 65
+  "total_posted": 66
 }
