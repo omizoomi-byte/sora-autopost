@@ -22,7 +22,8 @@
     "bananas",
     "coffee",
     "cats",
-    "the human brain"
+    "the human brain",
+    "honey bees"
   ],
   "posted": [
     {
@@ -426,7 +427,13 @@
       "title": "5 Wild Facts About The Human Brain",
       "video_id": "nNjDy9xfMHo",
       "posted_at": "2026-05-27T12:25:56.443399"
+    },
+    {
+      "topic": "honey bees",
+      "title": "5 Wild Facts About Honey Bees",
+      "video_id": "rBrIP_5ID58",
+      "posted_at": "2026-05-28T12:32:46.988598"
     }
   ],
-  "total_posted": 67
+  "total_posted": 68
 }
