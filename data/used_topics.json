@@ -23,7 +23,8 @@
     "coffee",
     "cats",
     "the human brain",
-    "honey bees"
+    "honey bees",
+    "deep sea creatures"
   ],
   "posted": [
     {
@@ -433,7 +434,13 @@
       "title": "5 Wild Facts About Honey Bees",
       "video_id": "rBrIP_5ID58",
       "posted_at": "2026-05-28T12:32:46.988598"
+    },
+    {
+      "topic": "deep sea creatures",
+      "title": "5 Wild Facts About Deep Sea Creatures",
+      "video_id": "FX2VgUg-BKw",
+      "posted_at": "2026-05-29T12:17:57.400024"
     }
   ],
-  "total_posted": 68
+  "total_posted": 69
 }
