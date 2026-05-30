@@ -24,7 +24,8 @@
     "cats",
     "the human brain",
     "honey bees",
-    "deep sea creatures"
+    "deep sea creatures",
+    "Premier League football"
   ],
   "posted": [
     {
@@ -440,7 +441,13 @@
       "title": "5 Wild Facts About Deep Sea Creatures",
       "video_id": "FX2VgUg-BKw",
       "posted_at": "2026-05-29T12:17:57.400024"
+    },
+    {
+      "topic": "Premier League football",
+      "title": "5 Wild Facts About Premier League Football",
+      "video_id": "XDqZA8OgoE0",
+      "posted_at": "2026-05-30T10:53:46.430386"
     }
   ],
-  "total_posted": 69
+  "total_posted": 70
 }
