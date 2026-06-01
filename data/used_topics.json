@@ -26,7 +26,8 @@
     "honey bees",
     "deep sea creatures",
     "Premier League football",
-    "volcanoes"
+    "volcanoes",
+    "Formula 1 racing"
   ],
   "posted": [
     {
@@ -454,7 +455,13 @@
       "title": "5 Wild Facts About Volcanoes",
       "video_id": "A4m0-fHxaSw",
       "posted_at": "2026-05-31T11:03:03.312400"
+    },
+    {
+      "topic": "Formula 1 racing",
+      "title": "5 Wild Facts About Formula 1 Racing",
+      "video_id": "jj6Gwd84qfQ",
+      "posted_at": "2026-06-01T15:06:30.762767"
     }
   ],
-  "total_posted": 71
+  "total_posted": 72
 }
