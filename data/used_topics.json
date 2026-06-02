@@ -27,7 +27,8 @@
     "deep sea creatures",
     "Premier League football",
     "volcanoes",
-    "Formula 1 racing"
+    "Formula 1 racing",
+    "diamonds"
   ],
   "posted": [
     {
@@ -461,7 +462,13 @@
       "title": "5 Wild Facts About Formula 1 Racing",
       "video_id": "jj6Gwd84qfQ",
       "posted_at": "2026-06-01T15:06:30.762767"
+    },
+    {
+      "topic": "diamonds",
+      "title": "5 Wild Facts About Diamonds",
+      "video_id": "KnNeKZZ4G-Y",
+      "posted_at": "2026-06-02T12:45:36.596467"
     }
   ],
-  "total_posted": 72
+  "total_posted": 73
 }
