@@ -28,7 +28,8 @@
     "Premier League football",
     "volcanoes",
     "Formula 1 racing",
-    "diamonds"
+    "diamonds",
+    "dinosaurs"
   ],
   "posted": [
     {
@@ -468,7 +469,13 @@
       "title": "5 Wild Facts About Diamonds",
       "video_id": "KnNeKZZ4G-Y",
       "posted_at": "2026-06-02T12:45:36.596467"
+    },
+    {
+      "topic": "dinosaurs",
+      "title": "5 Wild Facts About Dinosaurs",
+      "video_id": "YLZn1_8Mjw4",
+      "posted_at": "2026-06-03T13:19:25.369803"
     }
   ],
-  "total_posted": 73
+  "total_posted": 74
 }
