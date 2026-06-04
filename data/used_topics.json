@@ -29,7 +29,8 @@
     "volcanoes",
     "Formula 1 racing",
     "diamonds",
-    "dinosaurs"
+    "dinosaurs",
+    "Olympic Games"
   ],
   "posted": [
     {
@@ -475,7 +476,13 @@
       "title": "5 Wild Facts About Dinosaurs",
       "video_id": "YLZn1_8Mjw4",
       "posted_at": "2026-06-03T13:19:25.369803"
+    },
+    {
+      "topic": "Olympic Games",
+      "title": "5 Wild Facts About Olympic Games",
+      "video_id": "OXLtTxqFC98",
+      "posted_at": "2026-06-04T11:55:41.376009"
     }
   ],
-  "total_posted": 74
+  "total_posted": 75
 }
