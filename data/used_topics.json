@@ -30,7 +30,8 @@
     "Formula 1 racing",
     "diamonds",
     "dinosaurs",
-    "Olympic Games"
+    "Olympic Games",
+    "the Great Wall of China"
   ],
   "posted": [
     {
@@ -482,7 +483,13 @@
       "title": "5 Wild Facts About Olympic Games",
       "video_id": "OXLtTxqFC98",
       "posted_at": "2026-06-04T11:55:41.376009"
+    },
+    {
+      "topic": "the Great Wall of China",
+      "title": "5 Wild Facts About The Great Wall Of China",
+      "video_id": "ke3HQKrIijg",
+      "posted_at": "2026-06-05T12:11:49.531509"
     }
   ],
-  "total_posted": 75
+  "total_posted": 76
 }
