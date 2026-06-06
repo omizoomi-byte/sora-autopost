@@ -31,7 +31,8 @@
     "diamonds",
     "dinosaurs",
     "Olympic Games",
-    "the Great Wall of China"
+    "the Great Wall of China",
+    "famous scientists"
   ],
   "posted": [
     {
@@ -489,7 +490,13 @@
       "title": "5 Wild Facts About The Great Wall Of China",
       "video_id": "ke3HQKrIijg",
       "posted_at": "2026-06-05T12:11:49.531509"
+    },
+    {
+      "topic": "famous scientists",
+      "title": "5 Wild Facts About Famous Scientists",
+      "video_id": "un5mMfAU7dk",
+      "posted_at": "2026-06-06T10:56:42.205282"
     }
   ],
-  "total_posted": 76
+  "total_posted": 77
 }
