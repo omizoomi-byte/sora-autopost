@@ -32,7 +32,8 @@
     "dinosaurs",
     "Olympic Games",
     "the Great Wall of China",
-    "famous scientists"
+    "famous scientists",
+    "elephants"
   ],
   "posted": [
     {
@@ -496,7 +497,13 @@
       "title": "5 Wild Facts About Famous Scientists",
       "video_id": "un5mMfAU7dk",
       "posted_at": "2026-06-06T10:56:42.205282"
+    },
+    {
+      "topic": "elephants",
+      "title": "5 Wild Facts About Elephants",
+      "video_id": "ZO38Pn3dPas",
+      "posted_at": "2026-06-08T13:12:38.829482"
     }
   ],
-  "total_posted": 77
+  "total_posted": 78
 }
