@@ -33,7 +33,8 @@
     "Olympic Games",
     "the Great Wall of China",
     "famous scientists",
-    "elephants"
+    "elephants",
+    "Mount Everest"
   ],
   "posted": [
     {
@@ -503,7 +504,13 @@
       "title": "5 Wild Facts About Elephants",
       "video_id": "ZO38Pn3dPas",
       "posted_at": "2026-06-08T13:12:38.829482"
+    },
+    {
+      "topic": "Mount Everest",
+      "title": "5 Wild Facts About Mount Everest",
+      "video_id": "IM0qzFVZhoI",
+      "posted_at": "2026-06-09T12:06:59.550283"
     }
   ],
-  "total_posted": 78
+  "total_posted": 79
 }
