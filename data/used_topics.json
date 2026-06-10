@@ -34,7 +34,8 @@
     "the Great Wall of China",
     "famous scientists",
     "elephants",
-    "Mount Everest"
+    "Mount Everest",
+    "World War II"
   ],
   "posted": [
     {
@@ -510,7 +511,13 @@
       "title": "5 Wild Facts About Mount Everest",
       "video_id": "IM0qzFVZhoI",
       "posted_at": "2026-06-09T12:06:59.550283"
+    },
+    {
+      "topic": "World War II",
+      "title": "5 Wild Facts About World War Ii",
+      "video_id": "3rQXSB7yMBY",
+      "posted_at": "2026-06-10T12:26:18.151143"
     }
   ],
-  "total_posted": 79
+  "total_posted": 80
 }
