@@ -35,7 +35,8 @@
     "famous scientists",
     "elephants",
     "Mount Everest",
-    "World War II"
+    "World War II",
+    "ancient Egypt"
   ],
   "posted": [
     {
@@ -517,7 +518,13 @@
       "title": "5 Wild Facts About World War Ii",
       "video_id": "3rQXSB7yMBY",
       "posted_at": "2026-06-10T12:26:18.151143"
+    },
+    {
+      "topic": "ancient Egypt",
+      "title": "5 Wild Facts About Ancient Egypt",
+      "video_id": "0bp6ePfD_xY",
+      "posted_at": "2026-06-12T12:25:02.978900"
     }
   ],
-  "total_posted": 80
+  "total_posted": 81
 }
