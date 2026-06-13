@@ -36,7 +36,8 @@
     "elephants",
     "Mount Everest",
     "World War II",
-    "ancient Egypt"
+    "ancient Egypt",
+    "extreme weather"
   ],
   "posted": [
     {
@@ -524,7 +525,13 @@
       "title": "5 Wild Facts About Ancient Egypt",
       "video_id": "0bp6ePfD_xY",
       "posted_at": "2026-06-12T12:25:02.978900"
+    },
+    {
+      "topic": "extreme weather",
+      "title": "5 Wild Facts About Extreme Weather",
+      "video_id": "qVgBXuClic0",
+      "posted_at": "2026-06-13T11:20:02.521645"
     }
   ],
-  "total_posted": 81
+  "total_posted": 82
 }
