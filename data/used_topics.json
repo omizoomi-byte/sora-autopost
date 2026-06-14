@@ -37,7 +37,8 @@
     "Mount Everest",
     "World War II",
     "ancient Egypt",
-    "extreme weather"
+    "extreme weather",
+    "wild animals"
   ],
   "posted": [
     {
@@ -531,7 +532,13 @@
       "title": "5 Wild Facts About Extreme Weather",
       "video_id": "qVgBXuClic0",
       "posted_at": "2026-06-13T11:20:02.521645"
+    },
+    {
+      "topic": "wild animals",
+      "title": "5 Wild Facts About Wild Animals",
+      "video_id": "5XgbZmi7qLc",
+      "posted_at": "2026-06-14T11:33:18.950715"
     }
   ],
-  "total_posted": 82
+  "total_posted": 83
 }
