@@ -38,7 +38,8 @@
     "World War II",
     "ancient Egypt",
     "extreme weather",
-    "wild animals"
+    "wild animals",
+    "ancient Rome"
   ],
   "posted": [
     {
@@ -538,7 +539,13 @@
       "title": "5 Wild Facts About Wild Animals",
       "video_id": "5XgbZmi7qLc",
       "posted_at": "2026-06-14T11:33:18.950715"
+    },
+    {
+      "topic": "ancient Rome",
+      "title": "5 Wild Facts About Ancient Rome",
+      "video_id": "8VDPBHhy1q0",
+      "posted_at": "2026-06-15T15:20:48.849663"
     }
   ],
-  "total_posted": 83
+  "total_posted": 84
 }
