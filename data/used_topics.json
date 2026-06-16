@@ -39,7 +39,8 @@
     "ancient Egypt",
     "extreme weather",
     "wild animals",
-    "ancient Rome"
+    "ancient Rome",
+    "dogs"
   ],
   "posted": [
     {
@@ -545,7 +546,13 @@
       "title": "5 Wild Facts About Ancient Rome",
       "video_id": "8VDPBHhy1q0",
       "posted_at": "2026-06-15T15:20:48.849663"
+    },
+    {
+      "topic": "dogs",
+      "title": "5 Wild Facts About Dogs",
+      "video_id": "CZ79X5SbLyY",
+      "posted_at": "2026-06-16T13:34:50.762902"
     }
   ],
-  "total_posted": 84
+  "total_posted": 85
 }
