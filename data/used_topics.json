@@ -40,7 +40,8 @@
     "extreme weather",
     "wild animals",
     "ancient Rome",
-    "dogs"
+    "dogs",
+    "the solar system"
   ],
   "posted": [
     {
@@ -552,7 +553,13 @@
       "title": "5 Wild Facts About Dogs",
       "video_id": "CZ79X5SbLyY",
       "posted_at": "2026-06-16T13:34:50.762902"
+    },
+    {
+      "topic": "the solar system",
+      "title": "5 Wild Facts About The Solar System",
+      "video_id": "XMa-eaxMcSY",
+      "posted_at": "2026-06-17T12:56:03.502582"
     }
   ],
-  "total_posted": 85
+  "total_posted": 86
 }
