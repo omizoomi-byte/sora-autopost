@@ -42,7 +42,8 @@
     "ancient Rome",
     "dogs",
     "the solar system",
-    "languages"
+    "languages",
+    "football/soccer"
   ],
   "posted": [
     {
@@ -566,7 +567,13 @@
       "title": "5 Wild Facts About Languages",
       "video_id": "UlAVKzZ--Mc",
       "posted_at": "2026-06-18T12:31:11.807446"
+    },
+    {
+      "topic": "football/soccer",
+      "title": "5 Wild Facts About Football/Soccer",
+      "video_id": "FBMwvFpig-o",
+      "posted_at": "2026-06-19T12:51:57.670798"
     }
   ],
-  "total_posted": 87
+  "total_posted": 88
 }
