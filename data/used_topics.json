@@ -1,49 +1,6 @@
 {
   "used_topics": [
-    "the Roman Empire",
-    "famous artists",
-    "black holes",
-    "the moon",
-    "the Amazon rainforest",
-    "famous inventions",
-    "sharks",
-    "Mars",
-    "the ocean",
-    "the Arctic",
-    "the Sahara desert",
-    "space exploration",
-    "the Amazon river",
-    "pizza",
-    "chocolate",
-    "penguins",
-    "world records",
-    "lions",
-    "gold",
-    "bananas",
-    "coffee",
-    "cats",
-    "the human brain",
-    "honey bees",
-    "deep sea creatures",
-    "Premier League football",
-    "volcanoes",
-    "Formula 1 racing",
-    "diamonds",
-    "dinosaurs",
-    "Olympic Games",
-    "the Great Wall of China",
-    "famous scientists",
-    "elephants",
-    "Mount Everest",
-    "World War II",
-    "ancient Egypt",
-    "extreme weather",
-    "wild animals",
-    "ancient Rome",
-    "dogs",
-    "the solar system",
-    "languages",
-    "football/soccer"
+    "Olympic Games"
   ],
   "posted": [
     {
@@ -573,7 +530,13 @@
       "title": "5 Wild Facts About Football/Soccer",
       "video_id": "FBMwvFpig-o",
       "posted_at": "2026-06-19T12:51:57.670798"
+    },
+    {
+      "topic": "Olympic Games",
+      "title": "5 Wild Facts About Olympic Games",
+      "video_id": "DChHrRTsJhc",
+      "posted_at": "2026-06-20T11:24:56.440024"
     }
   ],
-  "total_posted": 88
+  "total_posted": 89
 }
