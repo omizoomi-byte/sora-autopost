@@ -1,6 +1,7 @@
 {
   "used_topics": [
-    "Olympic Games"
+    "Olympic Games",
+    "the solar system"
   ],
   "posted": [
     {
@@ -536,7 +537,13 @@
       "title": "5 Wild Facts About Olympic Games",
       "video_id": "DChHrRTsJhc",
       "posted_at": "2026-06-20T11:24:56.440024"
+    },
+    {
+      "topic": "the solar system",
+      "title": "5 Wild Facts About The Solar System",
+      "video_id": "mTbhj0gMJxY",
+      "posted_at": "2026-06-21T11:50:38.902976"
     }
   ],
-  "total_posted": 89
+  "total_posted": 90
 }
