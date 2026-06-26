@@ -1,7 +1,8 @@
 {
   "used_topics": [
     "Olympic Games",
-    "the solar system"
+    "the solar system",
+    "deep sea creatures"
   ],
   "posted": [
     {
@@ -543,7 +544,13 @@
       "title": "5 Wild Facts About The Solar System",
       "video_id": "mTbhj0gMJxY",
       "posted_at": "2026-06-21T11:50:38.902976"
+    },
+    {
+      "topic": "deep sea creatures",
+      "title": "5 Wild Facts About Deep Sea Creatures",
+      "video_id": "SC1xtL1qxI4",
+      "posted_at": "2026-06-26T11:50:05.992959"
     }
   ],
-  "total_posted": 90
+  "total_posted": 91
 }
