@@ -2,7 +2,8 @@
   "used_topics": [
     "Olympic Games",
     "the solar system",
-    "deep sea creatures"
+    "deep sea creatures",
+    "the Roman Empire"
   ],
   "posted": [
     {
@@ -550,7 +551,13 @@
       "title": "5 Wild Facts About Deep Sea Creatures",
       "video_id": "SC1xtL1qxI4",
       "posted_at": "2026-06-26T11:50:05.992959"
+    },
+    {
+      "topic": "the Roman Empire",
+      "title": "5 Wild Facts About The Roman Empire",
+      "video_id": "Lidv8B5hbaY",
+      "posted_at": "2026-06-27T11:04:15.649457"
     }
   ],
-  "total_posted": 91
+  "total_posted": 92
 }
