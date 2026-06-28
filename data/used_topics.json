@@ -3,7 +3,8 @@
     "Olympic Games",
     "the solar system",
     "deep sea creatures",
-    "the Roman Empire"
+    "the Roman Empire",
+    "world records"
   ],
   "posted": [
     {
@@ -557,7 +558,13 @@
       "title": "5 Wild Facts About The Roman Empire",
       "video_id": "Lidv8B5hbaY",
       "posted_at": "2026-06-27T11:04:15.649457"
+    },
+    {
+      "topic": "world records",
+      "title": "5 Wild Facts About World Records",
+      "video_id": "A_roiyDSsBU",
+      "posted_at": "2026-06-28T11:12:47.464612"
     }
   ],
-  "total_posted": 92
+  "total_posted": 93
 }
