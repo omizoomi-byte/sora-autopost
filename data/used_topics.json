@@ -4,7 +4,8 @@
     "the solar system",
     "deep sea creatures",
     "the Roman Empire",
-    "world records"
+    "world records",
+    "Premier League football"
   ],
   "posted": [
     {
@@ -564,7 +565,13 @@
       "title": "5 Wild Facts About World Records",
       "video_id": "A_roiyDSsBU",
       "posted_at": "2026-06-28T11:12:47.464612"
+    },
+    {
+      "topic": "Premier League football",
+      "title": "5 Wild Facts About Premier League Football",
+      "video_id": "InIK3Wqv5JE",
+      "posted_at": "2026-06-29T13:13:06.778343"
     }
   ],
-  "total_posted": 93
+  "total_posted": 94
 }
