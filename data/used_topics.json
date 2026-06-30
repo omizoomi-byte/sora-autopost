@@ -5,7 +5,8 @@
     "deep sea creatures",
     "the Roman Empire",
     "world records",
-    "Premier League football"
+    "Premier League football",
+    "the moon"
   ],
   "posted": [
     {
@@ -571,7 +572,13 @@
       "title": "5 Wild Facts About Premier League Football",
       "video_id": "InIK3Wqv5JE",
       "posted_at": "2026-06-29T13:13:06.778343"
+    },
+    {
+      "topic": "the moon",
+      "title": "5 Wild Facts About The Moon",
+      "video_id": "O9hHd9ycC1A",
+      "posted_at": "2026-06-30T11:48:11.045599"
     }
   ],
-  "total_posted": 94
+  "total_posted": 95
 }
