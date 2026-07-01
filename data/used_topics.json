@@ -6,7 +6,8 @@
     "the Roman Empire",
     "world records",
     "Premier League football",
-    "the moon"
+    "the moon",
+    "bananas"
   ],
   "posted": [
     {
@@ -578,7 +579,13 @@
       "title": "5 Wild Facts About The Moon",
       "video_id": "O9hHd9ycC1A",
       "posted_at": "2026-06-30T11:48:11.045599"
+    },
+    {
+      "topic": "bananas",
+      "title": "5 Wild Facts About Bananas",
+      "video_id": "UhQIf2tlB7c",
+      "posted_at": "2026-07-01T12:09:15.190016"
     }
   ],
-  "total_posted": 95
+  "total_posted": 96
 }
