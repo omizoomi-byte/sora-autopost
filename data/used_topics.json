@@ -7,7 +7,8 @@
     "world records",
     "Premier League football",
     "the moon",
-    "bananas"
+    "bananas",
+    "languages"
   ],
   "posted": [
     {
@@ -585,7 +586,13 @@
       "title": "5 Wild Facts About Bananas",
       "video_id": "UhQIf2tlB7c",
       "posted_at": "2026-07-01T12:09:15.190016"
+    },
+    {
+      "topic": "languages",
+      "title": "5 Wild Facts About Languages",
+      "video_id": "DIVVJPPsgPU",
+      "posted_at": "2026-07-02T11:36:05.671545"
     }
   ],
-  "total_posted": 96
+  "total_posted": 97
 }
