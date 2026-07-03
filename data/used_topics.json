@@ -8,7 +8,8 @@
     "Premier League football",
     "the moon",
     "bananas",
-    "languages"
+    "languages",
+    "chocolate"
   ],
   "posted": [
     {
@@ -592,7 +593,13 @@
       "title": "5 Wild Facts About Languages",
       "video_id": "DIVVJPPsgPU",
       "posted_at": "2026-07-02T11:36:05.671545"
+    },
+    {
+      "topic": "chocolate",
+      "title": "5 Wild Facts About Chocolate",
+      "video_id": "DclzahzuFuk",
+      "posted_at": "2026-07-03T11:33:41.614358"
     }
   ],
-  "total_posted": 97
+  "total_posted": 98
 }
