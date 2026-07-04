@@ -9,7 +9,8 @@
     "the moon",
     "bananas",
     "languages",
-    "chocolate"
+    "chocolate",
+    "penguins"
   ],
   "posted": [
     {
@@ -599,7 +600,13 @@
       "title": "5 Wild Facts About Chocolate",
       "video_id": "DclzahzuFuk",
       "posted_at": "2026-07-03T11:33:41.614358"
+    },
+    {
+      "topic": "penguins",
+      "title": "5 Wild Facts About Penguins",
+      "video_id": "f5E0Dh-kQSg",
+      "posted_at": "2026-07-04T10:57:02.164931"
     }
   ],
-  "total_posted": 98
+  "total_posted": 99
 }
