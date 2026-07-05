@@ -10,7 +10,8 @@
     "bananas",
     "languages",
     "chocolate",
-    "penguins"
+    "penguins",
+    "the Amazon river"
   ],
   "posted": [
     {
@@ -606,7 +607,13 @@
       "title": "5 Wild Facts About Penguins",
       "video_id": "f5E0Dh-kQSg",
       "posted_at": "2026-07-04T10:57:02.164931"
+    },
+    {
+      "topic": "the Amazon river",
+      "title": "5 Wild Facts About The Amazon River",
+      "video_id": "1uN9mBjx6Q8",
+      "posted_at": "2026-07-05T11:09:53.688430"
     }
   ],
-  "total_posted": 99
+  "total_posted": 100
 }
