@@ -11,7 +11,8 @@
     "languages",
     "chocolate",
     "penguins",
-    "the Amazon river"
+    "the Amazon river",
+    "elephants"
   ],
   "posted": [
     {
@@ -613,7 +614,13 @@
       "title": "5 Wild Facts About The Amazon River",
       "video_id": "1uN9mBjx6Q8",
       "posted_at": "2026-07-05T11:09:53.688430"
+    },
+    {
+      "topic": "elephants",
+      "title": "5 Wild Facts About Elephants",
+      "video_id": "JsUwbHlwFL8",
+      "posted_at": "2026-07-06T12:52:35.429979"
     }
   ],
-  "total_posted": 100
+  "total_posted": 101
 }
