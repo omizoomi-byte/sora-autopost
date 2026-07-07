@@ -12,7 +12,8 @@
     "chocolate",
     "penguins",
     "the Amazon river",
-    "elephants"
+    "elephants",
+    "famous scientists"
   ],
   "posted": [
     {
@@ -620,7 +621,13 @@
       "title": "5 Wild Facts About Elephants",
       "video_id": "JsUwbHlwFL8",
       "posted_at": "2026-07-06T12:52:35.429979"
+    },
+    {
+      "topic": "famous scientists",
+      "title": "5 Wild Facts About Famous Scientists",
+      "video_id": "8NicNFGqSY8",
+      "posted_at": "2026-07-07T11:51:55.375825"
     }
   ],
-  "total_posted": 101
+  "total_posted": 102
 }
