@@ -13,7 +13,8 @@
     "penguins",
     "the Amazon river",
     "elephants",
-    "famous scientists"
+    "famous scientists",
+    "extreme weather"
   ],
   "posted": [
     {
@@ -627,7 +628,13 @@
       "title": "5 Wild Facts About Famous Scientists",
       "video_id": "8NicNFGqSY8",
       "posted_at": "2026-07-07T11:51:55.375825"
+    },
+    {
+      "topic": "extreme weather",
+      "title": "5 Wild Facts About Extreme Weather",
+      "video_id": "EV9mTsq2zWg",
+      "posted_at": "2026-07-08T11:06:16.709669"
     }
   ],
-  "total_posted": 102
+  "total_posted": 103
 }
