@@ -15,7 +15,8 @@
     "elephants",
     "famous scientists",
     "extreme weather",
-    "the human brain"
+    "the human brain",
+    "sharks"
   ],
   "posted": [
     {
@@ -641,7 +642,13 @@
       "title": "5 Wild Facts About The Human Brain",
       "video_id": "NKYJzfU9N2w",
       "posted_at": "2026-07-09T11:59:07.542165"
+    },
+    {
+      "topic": "sharks",
+      "title": "5 Wild Facts About Sharks",
+      "video_id": "TlWSLT5ayFA",
+      "posted_at": "2026-07-10T11:58:02.889211"
     }
   ],
-  "total_posted": 104
+  "total_posted": 105
 }
