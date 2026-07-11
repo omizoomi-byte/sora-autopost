@@ -16,7 +16,8 @@
     "famous scientists",
     "extreme weather",
     "the human brain",
-    "sharks"
+    "sharks",
+    "ancient Rome"
   ],
   "posted": [
     {
@@ -648,7 +649,13 @@
       "title": "5 Wild Facts About Sharks",
       "video_id": "TlWSLT5ayFA",
       "posted_at": "2026-07-10T11:58:02.889211"
+    },
+    {
+      "topic": "ancient Rome",
+      "title": "5 Wild Facts About Ancient Rome",
+      "video_id": "-jeoMBJNpsg",
+      "posted_at": "2026-07-11T10:19:38.798943"
     }
   ],
-  "total_posted": 105
+  "total_posted": 106
 }
