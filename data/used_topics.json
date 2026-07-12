@@ -17,7 +17,8 @@
     "extreme weather",
     "the human brain",
     "sharks",
-    "ancient Rome"
+    "ancient Rome",
+    "dinosaurs"
   ],
   "posted": [
     {
@@ -655,7 +656,13 @@
       "title": "5 Wild Facts About Ancient Rome",
       "video_id": "-jeoMBJNpsg",
       "posted_at": "2026-07-11T10:19:38.798943"
+    },
+    {
+      "topic": "dinosaurs",
+      "title": "5 Wild Facts About Dinosaurs",
+      "video_id": "k47uxr9ECUE",
+      "posted_at": "2026-07-12T10:29:16.431250"
     }
   ],
-  "total_posted": 106
+  "total_posted": 107
 }
