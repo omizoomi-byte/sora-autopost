@@ -18,7 +18,8 @@
     "the human brain",
     "sharks",
     "ancient Rome",
-    "dinosaurs"
+    "dinosaurs",
+    "World War II"
   ],
   "posted": [
     {
@@ -662,7 +663,13 @@
       "title": "5 Wild Facts About Dinosaurs",
       "video_id": "k47uxr9ECUE",
       "posted_at": "2026-07-12T10:29:16.431250"
+    },
+    {
+      "topic": "World War II",
+      "title": "5 Wild Facts About World War Ii",
+      "video_id": "zaydSkXpCHw",
+      "posted_at": "2026-07-13T12:04:24.357034"
     }
   ],
-  "total_posted": 107
+  "total_posted": 108
 }
