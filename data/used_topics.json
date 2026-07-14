@@ -19,7 +19,8 @@
     "sharks",
     "ancient Rome",
     "dinosaurs",
-    "World War II"
+    "World War II",
+    "the Amazon rainforest"
   ],
   "posted": [
     {
@@ -669,7 +670,13 @@
       "title": "5 Wild Facts About World War Ii",
       "video_id": "zaydSkXpCHw",
       "posted_at": "2026-07-13T12:04:24.357034"
+    },
+    {
+      "topic": "the Amazon rainforest",
+      "title": "5 Wild Facts About The Amazon Rainforest",
+      "video_id": "KvjoGPtTYuY",
+      "posted_at": "2026-07-14T10:46:29.392089"
     }
   ],
-  "total_posted": 108
+  "total_posted": 109
 }
