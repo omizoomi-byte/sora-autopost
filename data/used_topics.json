@@ -21,7 +21,8 @@
     "dinosaurs",
     "World War II",
     "the Amazon rainforest",
-    "Mount Everest"
+    "Mount Everest",
+    "the Great Wall of China"
   ],
   "posted": [
     {
@@ -683,7 +684,13 @@
       "title": "5 Wild Facts About Mount Everest",
       "video_id": "pC1oTtuDpR4",
       "posted_at": "2026-07-15T10:54:28.646229"
+    },
+    {
+      "topic": "the Great Wall of China",
+      "title": "5 Wild Facts About The Great Wall Of China",
+      "video_id": "7Nh6vUYQk8M",
+      "posted_at": "2026-07-16T11:01:41.419503"
     }
   ],
-  "total_posted": 110
+  "total_posted": 111
 }
