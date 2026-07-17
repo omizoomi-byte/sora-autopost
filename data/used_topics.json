@@ -22,7 +22,8 @@
     "World War II",
     "the Amazon rainforest",
     "Mount Everest",
-    "the Great Wall of China"
+    "the Great Wall of China",
+    "volcanoes"
   ],
   "posted": [
     {
@@ -690,7 +691,13 @@
       "title": "5 Wild Facts About The Great Wall Of China",
       "video_id": "7Nh6vUYQk8M",
       "posted_at": "2026-07-16T11:01:41.419503"
+    },
+    {
+      "topic": "volcanoes",
+      "title": "5 Wild Facts About Volcanoes",
+      "video_id": "M24pVZjDzDU",
+      "posted_at": "2026-07-17T10:48:31.973824"
     }
   ],
-  "total_posted": 111
+  "total_posted": 112
 }
