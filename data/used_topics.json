@@ -23,7 +23,8 @@
     "the Amazon rainforest",
     "Mount Everest",
     "the Great Wall of China",
-    "volcanoes"
+    "volcanoes",
+    "dogs"
   ],
   "posted": [
     {
@@ -697,7 +698,13 @@
       "title": "5 Wild Facts About Volcanoes",
       "video_id": "M24pVZjDzDU",
       "posted_at": "2026-07-17T10:48:31.973824"
+    },
+    {
+      "topic": "dogs",
+      "title": "5 Wild Facts About Dogs",
+      "video_id": "wjTQapIJMz8",
+      "posted_at": "2026-07-18T10:23:11.357157"
     }
   ],
-  "total_posted": 112
+  "total_posted": 113
 }
