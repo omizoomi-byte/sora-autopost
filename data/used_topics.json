@@ -24,7 +24,8 @@
     "Mount Everest",
     "the Great Wall of China",
     "volcanoes",
-    "dogs"
+    "dogs",
+    "football/soccer"
   ],
   "posted": [
     {
@@ -704,7 +705,13 @@
       "title": "5 Wild Facts About Dogs",
       "video_id": "wjTQapIJMz8",
       "posted_at": "2026-07-18T10:23:11.357157"
+    },
+    {
+      "topic": "football/soccer",
+      "title": "5 Wild Facts About Football/Soccer",
+      "video_id": "1bUSCOEdKII",
+      "posted_at": "2026-07-19T10:33:43.602153"
     }
   ],
-  "total_posted": 113
+  "total_posted": 114
 }
