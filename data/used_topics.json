@@ -25,7 +25,8 @@
     "the Great Wall of China",
     "volcanoes",
     "dogs",
-    "football/soccer"
+    "football/soccer",
+    "the Sahara desert"
   ],
   "posted": [
     {
@@ -711,7 +712,13 @@
       "title": "5 Wild Facts About Football/Soccer",
       "video_id": "1bUSCOEdKII",
       "posted_at": "2026-07-19T10:33:43.602153"
+    },
+    {
+      "topic": "the Sahara desert",
+      "title": "5 Wild Facts About The Sahara Desert",
+      "video_id": "cnPwVZSB1AI",
+      "posted_at": "2026-07-20T11:49:34.730687"
     }
   ],
-  "total_posted": 114
+  "total_posted": 115
 }
