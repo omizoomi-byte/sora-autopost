@@ -26,7 +26,8 @@
     "volcanoes",
     "dogs",
     "football/soccer",
-    "the Sahara desert"
+    "the Sahara desert",
+    "coffee"
   ],
   "posted": [
     {
@@ -718,7 +719,13 @@
       "title": "5 Wild Facts About The Sahara Desert",
       "video_id": "cnPwVZSB1AI",
       "posted_at": "2026-07-20T11:49:34.730687"
+    },
+    {
+      "topic": "coffee",
+      "title": "5 Wild Facts About Coffee",
+      "video_id": "NBPDM1D06NM",
+      "posted_at": "2026-07-21T11:12:20.503290"
     }
   ],
-  "total_posted": 115
+  "total_posted": 116
 }
