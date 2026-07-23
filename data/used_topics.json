@@ -27,7 +27,8 @@
     "dogs",
     "football/soccer",
     "the Sahara desert",
-    "coffee"
+    "coffee",
+    "space exploration"
   ],
   "posted": [
     {
@@ -725,7 +726,13 @@
       "title": "5 Wild Facts About Coffee",
       "video_id": "NBPDM1D06NM",
       "posted_at": "2026-07-21T11:12:20.503290"
+    },
+    {
+      "topic": "space exploration",
+      "title": "5 Wild Facts About Space Exploration",
+      "video_id": "EfR3kJnkVw4",
+      "posted_at": "2026-07-23T11:11:41.423002"
     }
   ],
-  "total_posted": 116
+  "total_posted": 117
 }
