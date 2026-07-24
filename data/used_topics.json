@@ -28,7 +28,8 @@
     "football/soccer",
     "the Sahara desert",
     "coffee",
-    "space exploration"
+    "space exploration",
+    "famous inventions"
   ],
   "posted": [
     {
@@ -732,7 +733,13 @@
       "title": "5 Wild Facts About Space Exploration",
       "video_id": "EfR3kJnkVw4",
       "posted_at": "2026-07-23T11:11:41.423002"
+    },
+    {
+      "topic": "famous inventions",
+      "title": "5 Wild Facts About Famous Inventions",
+      "video_id": "Cgl7__ftRwE",
+      "posted_at": "2026-07-24T11:08:04.236124"
     }
   ],
-  "total_posted": 117
+  "total_posted": 118
 }
