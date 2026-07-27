@@ -31,7 +31,8 @@
     "space exploration",
     "famous inventions",
     "black holes",
-    "honey bees"
+    "honey bees",
+    "wild animals"
   ],
   "posted": [
     {
@@ -753,7 +754,13 @@
       "title": "5 Wild Facts About Honey Bees",
       "video_id": "_JN589qktiw",
       "posted_at": "2026-07-26T10:49:39.610777"
+    },
+    {
+      "topic": "wild animals",
+      "title": "5 Wild Facts About Wild Animals",
+      "video_id": "3ml4Vhmp8Gs",
+      "posted_at": "2026-07-27T12:24:15.329510"
     }
   ],
-  "total_posted": 120
+  "total_posted": 121
 }
