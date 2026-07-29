@@ -33,7 +33,8 @@
     "black holes",
     "honey bees",
     "wild animals",
-    "gold"
+    "gold",
+    "lions"
   ],
   "posted": [
     {
@@ -767,7 +768,13 @@
       "title": "5 Wild Facts About Gold",
       "video_id": "KfL3UFJhm08",
       "posted_at": "2026-07-28T11:18:21.099385"
+    },
+    {
+      "topic": "lions",
+      "title": "5 Wild Facts About Lions",
+      "video_id": "xqJZdNKN1ZA",
+      "posted_at": "2026-07-29T11:31:33.019906"
     }
   ],
-  "total_posted": 122
+  "total_posted": 123
 }
