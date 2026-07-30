@@ -34,7 +34,8 @@
     "honey bees",
     "wild animals",
     "gold",
-    "lions"
+    "lions",
+    "Mars"
   ],
   "posted": [
     {
@@ -774,7 +775,13 @@
       "title": "5 Wild Facts About Lions",
       "video_id": "xqJZdNKN1ZA",
       "posted_at": "2026-07-29T11:31:33.019906"
+    },
+    {
+      "topic": "Mars",
+      "title": "5 Wild Facts About Mars",
+      "video_id": "EN9D4sePxDU",
+      "posted_at": "2026-07-30T11:09:12.434491"
     }
   ],
-  "total_posted": 123
+  "total_posted": 124
 }
