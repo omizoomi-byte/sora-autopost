@@ -37,7 +37,8 @@
     "lions",
     "Mars",
     "the ocean",
-    "diamonds"
+    "diamonds",
+    "cats"
   ],
   "posted": [
     {
@@ -795,7 +796,13 @@
       "title": "5 Wild Facts About Diamonds",
       "video_id": "RHFjIqh5I0s",
       "posted_at": "2026-08-01T10:45:24.030909"
+    },
+    {
+      "topic": "cats",
+      "title": "5 Wild Facts About Cats",
+      "video_id": "K20eyGhg2Ck",
+      "posted_at": "2026-08-02T10:42:29.454655"
     }
   ],
-  "total_posted": 126
+  "total_posted": 127
 }
