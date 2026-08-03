@@ -38,7 +38,8 @@
     "Mars",
     "the ocean",
     "diamonds",
-    "cats"
+    "cats",
+    "famous artists"
   ],
   "posted": [
     {
@@ -802,7 +803,13 @@
       "title": "5 Wild Facts About Cats",
       "video_id": "K20eyGhg2Ck",
       "posted_at": "2026-08-02T10:42:29.454655"
+    },
+    {
+      "topic": "famous artists",
+      "title": "5 Wild Facts About Famous Artists",
+      "video_id": "P6vBdkIxq_w",
+      "posted_at": "2026-08-03T12:26:51.698636"
     }
   ],
-  "total_posted": 127
+  "total_posted": 128
 }
