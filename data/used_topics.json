@@ -39,7 +39,8 @@
     "the ocean",
     "diamonds",
     "cats",
-    "famous artists"
+    "famous artists",
+    "Formula 1 racing"
   ],
   "posted": [
     {
@@ -809,7 +810,13 @@
       "title": "5 Wild Facts About Famous Artists",
       "video_id": "P6vBdkIxq_w",
       "posted_at": "2026-08-03T12:26:51.698636"
+    },
+    {
+      "topic": "Formula 1 racing",
+      "title": "5 Wild Facts About Formula 1 Racing",
+      "video_id": "Zd8KCBgiAgw",
+      "posted_at": "2026-08-04T11:28:47.839501"
     }
   ],
-  "total_posted": 128
+  "total_posted": 129
 }
