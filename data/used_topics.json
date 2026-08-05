@@ -40,7 +40,8 @@
     "diamonds",
     "cats",
     "famous artists",
-    "Formula 1 racing"
+    "Formula 1 racing",
+    "ancient Egypt"
   ],
   "posted": [
     {
@@ -816,7 +817,13 @@
       "title": "5 Wild Facts About Formula 1 Racing",
       "video_id": "Zd8KCBgiAgw",
       "posted_at": "2026-08-04T11:28:47.839501"
+    },
+    {
+      "topic": "ancient Egypt",
+      "title": "5 Wild Facts About Ancient Egypt",
+      "video_id": "j3hBPM7Be1o",
+      "posted_at": "2026-08-05T11:26:35.517477"
     }
   ],
-  "total_posted": 129
+  "total_posted": 130
 }
