@@ -41,7 +41,8 @@
     "cats",
     "famous artists",
     "Formula 1 racing",
-    "ancient Egypt"
+    "ancient Egypt",
+    "pizza"
   ],
   "posted": [
     {
@@ -823,7 +824,13 @@
       "title": "5 Wild Facts About Ancient Egypt",
       "video_id": "j3hBPM7Be1o",
       "posted_at": "2026-08-05T11:26:35.517477"
+    },
+    {
+      "topic": "pizza",
+      "title": "5 Wild Facts About Pizza",
+      "video_id": "TpmRtvv0jx8",
+      "posted_at": "2026-08-06T11:28:41.010963"
     }
   ],
-  "total_posted": 130
+  "total_posted": 131
 }
