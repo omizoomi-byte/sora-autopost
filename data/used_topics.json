@@ -42,7 +42,8 @@
     "famous artists",
     "Formula 1 racing",
     "ancient Egypt",
-    "pizza"
+    "pizza",
+    "the Arctic"
   ],
   "posted": [
     {
@@ -830,7 +831,13 @@
       "title": "5 Wild Facts About Pizza",
       "video_id": "TpmRtvv0jx8",
       "posted_at": "2026-08-06T11:28:41.010963"
+    },
+    {
+      "topic": "the Arctic",
+      "title": "5 Wild Facts About The Arctic",
+      "video_id": "lI8oLqMAbM4",
+      "posted_at": "2026-08-08T09:38:03.883798"
     }
   ],
-  "total_posted": 131
+  "total_posted": 132
 }
