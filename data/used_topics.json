@@ -1,48 +1,5 @@
 {
   "used_topics": [
-    "Olympic Games",
-    "the solar system",
-    "deep sea creatures",
-    "the Roman Empire",
-    "world records",
-    "Premier League football",
-    "the moon",
-    "bananas",
-    "languages",
-    "chocolate",
-    "penguins",
-    "the Amazon river",
-    "elephants",
-    "famous scientists",
-    "extreme weather",
-    "the human brain",
-    "sharks",
-    "ancient Rome",
-    "dinosaurs",
-    "World War II",
-    "the Amazon rainforest",
-    "Mount Everest",
-    "the Great Wall of China",
-    "volcanoes",
-    "dogs",
-    "football/soccer",
-    "the Sahara desert",
-    "coffee",
-    "space exploration",
-    "famous inventions",
-    "black holes",
-    "honey bees",
-    "wild animals",
-    "gold",
-    "lions",
-    "Mars",
-    "the ocean",
-    "diamonds",
-    "cats",
-    "famous artists",
-    "Formula 1 racing",
-    "ancient Egypt",
-    "pizza",
     "the Arctic"
   ],
   "posted": [
@@ -837,7 +794,13 @@
       "title": "5 Wild Facts About The Arctic",
       "video_id": "lI8oLqMAbM4",
       "posted_at": "2026-08-08T09:38:03.883798"
+    },
+    {
+      "topic": "the Arctic",
+      "title": "5 Wild Facts About The Arctic",
+      "video_id": "iFCEiQ_Ja7w",
+      "posted_at": "2026-08-09T09:40:41.370907"
     }
   ],
-  "total_posted": 132
+  "total_posted": 133
 }
