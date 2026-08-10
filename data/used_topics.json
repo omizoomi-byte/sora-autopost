@@ -1,6 +1,7 @@
 {
   "used_topics": [
-    "the Arctic"
+    "the Arctic",
+    "Formula 1 racing"
   ],
   "posted": [
     {
@@ -800,7 +801,13 @@
       "title": "5 Wild Facts About The Arctic",
       "video_id": "iFCEiQ_Ja7w",
       "posted_at": "2026-08-09T09:40:41.370907"
+    },
+    {
+      "topic": "Formula 1 racing",
+      "title": "5 Wild Facts About Formula 1 Racing",
+      "video_id": "4GsB5ixx5SI",
+      "posted_at": "2026-08-10T10:18:27.096581"
     }
   ],
-  "total_posted": 133
+  "total_posted": 134
 }
