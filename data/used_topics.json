@@ -1,7 +1,8 @@
 {
   "used_topics": [
     "the Arctic",
-    "Formula 1 racing"
+    "Formula 1 racing",
+    "pizza"
   ],
   "posted": [
     {
@@ -807,7 +808,13 @@
       "title": "5 Wild Facts About Formula 1 Racing",
       "video_id": "4GsB5ixx5SI",
       "posted_at": "2026-08-10T10:18:27.096581"
+    },
+    {
+      "topic": "pizza",
+      "title": "5 Wild Facts About Pizza",
+      "video_id": "PM2kEIMpfTY",
+      "posted_at": "2026-08-11T10:02:20.762758"
     }
   ],
-  "total_posted": 134
+  "total_posted": 135
 }
