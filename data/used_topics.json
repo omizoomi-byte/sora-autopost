@@ -5,7 +5,8 @@
     "pizza",
     "Mount Everest",
     "world records",
-    "sharks"
+    "sharks",
+    "honey bees"
   ],
   "posted": [
     {
@@ -835,7 +836,13 @@
       "title": "5 Wild Facts About Sharks",
       "video_id": "oiwL_SfCIgk",
       "posted_at": "2026-08-14T10:02:18.029476"
+    },
+    {
+      "topic": "honey bees",
+      "title": "5 Wild Facts About Honey Bees",
+      "video_id": "ORt-ARdIBE4",
+      "posted_at": "2026-08-15T09:31:23.548619"
     }
   ],
-  "total_posted": 138
+  "total_posted": 139
 }
