@@ -6,7 +6,8 @@
     "Mount Everest",
     "world records",
     "sharks",
-    "honey bees"
+    "honey bees",
+    "Premier League football"
   ],
   "posted": [
     {
@@ -842,7 +843,13 @@
       "title": "5 Wild Facts About Honey Bees",
       "video_id": "ORt-ARdIBE4",
       "posted_at": "2026-08-15T09:31:23.548619"
+    },
+    {
+      "topic": "Premier League football",
+      "title": "5 Wild Facts About Premier League Football",
+      "video_id": "QAQicJXrors",
+      "posted_at": "2026-08-16T09:31:52.103755"
     }
   ],
-  "total_posted": 139
+  "total_posted": 140
 }
