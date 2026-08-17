@@ -7,7 +7,8 @@
     "world records",
     "sharks",
     "honey bees",
-    "Premier League football"
+    "Premier League football",
+    "coffee"
   ],
   "posted": [
     {
@@ -849,7 +850,13 @@
       "title": "5 Wild Facts About Premier League Football",
       "video_id": "QAQicJXrors",
       "posted_at": "2026-08-16T09:31:52.103755"
+    },
+    {
+      "topic": "coffee",
+      "title": "5 Wild Facts About Coffee",
+      "video_id": "xGygNmni84Q",
+      "posted_at": "2026-08-17T09:44:44.018464"
     }
   ],
-  "total_posted": 140
+  "total_posted": 141
 }
