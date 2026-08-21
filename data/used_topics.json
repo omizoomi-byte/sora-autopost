@@ -9,7 +9,8 @@
     "honey bees",
     "Premier League football",
     "coffee",
-    "wild animals"
+    "wild animals",
+    "Mars"
   ],
   "posted": [
     {
@@ -863,7 +864,13 @@
       "title": "5 Wild Facts About Wild Animals",
       "video_id": "marlmurYjY8",
       "posted_at": "2026-08-18T09:33:57.870433"
+    },
+    {
+      "topic": "Mars",
+      "title": "5 Wild Facts About Mars",
+      "video_id": "GGKDj_fCBW8",
+      "posted_at": "2026-08-21T09:36:55.798644"
     }
   ],
-  "total_posted": 142
+  "total_posted": 143
 }
