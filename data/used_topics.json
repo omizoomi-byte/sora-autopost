@@ -10,7 +10,8 @@
     "Premier League football",
     "coffee",
     "wild animals",
-    "Mars"
+    "Mars",
+    "ancient Rome"
   ],
   "posted": [
     {
@@ -870,7 +871,13 @@
       "title": "5 Wild Facts About Mars",
       "video_id": "GGKDj_fCBW8",
       "posted_at": "2026-08-21T09:36:55.798644"
+    },
+    {
+      "topic": "ancient Rome",
+      "title": "5 Wild Facts About Ancient Rome",
+      "video_id": "O7Wft20R4kA",
+      "posted_at": "2026-08-22T09:28:12.048745"
     }
   ],
-  "total_posted": 143
+  "total_posted": 144
 }
