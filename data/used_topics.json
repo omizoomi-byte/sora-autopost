@@ -11,7 +11,8 @@
     "coffee",
     "wild animals",
     "Mars",
-    "ancient Rome"
+    "ancient Rome",
+    "famous inventions"
   ],
   "posted": [
     {
@@ -877,7 +878,13 @@
       "title": "5 Wild Facts About Ancient Rome",
       "video_id": "O7Wft20R4kA",
       "posted_at": "2026-08-22T09:28:12.048745"
+    },
+    {
+      "topic": "famous inventions",
+      "title": "5 Wild Facts About Famous Inventions",
+      "video_id": "yNg3f-M7VxA",
+      "posted_at": "2026-08-23T09:30:46.860871"
     }
   ],
-  "total_posted": 144
+  "total_posted": 145
 }
