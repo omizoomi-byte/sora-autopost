@@ -12,7 +12,8 @@
     "wild animals",
     "Mars",
     "ancient Rome",
-    "famous inventions"
+    "famous inventions",
+    "penguins"
   ],
   "posted": [
     {
@@ -884,7 +885,13 @@
       "title": "5 Wild Facts About Famous Inventions",
       "video_id": "yNg3f-M7VxA",
       "posted_at": "2026-08-23T09:30:46.860871"
+    },
+    {
+      "topic": "penguins",
+      "title": "5 Wild Facts About Penguins",
+      "video_id": "BtSzpTzAUnI",
+      "posted_at": "2026-08-24T09:48:31.575793"
     }
   ],
-  "total_posted": 145
+  "total_posted": 146
 }
