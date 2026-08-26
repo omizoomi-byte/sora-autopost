@@ -13,7 +13,8 @@
     "Mars",
     "ancient Rome",
     "famous inventions",
-    "penguins"
+    "penguins",
+    "the Amazon rainforest"
   ],
   "posted": [
     {
@@ -891,7 +892,13 @@
       "title": "5 Wild Facts About Penguins",
       "video_id": "BtSzpTzAUnI",
       "posted_at": "2026-08-24T09:48:31.575793"
+    },
+    {
+      "topic": "the Amazon rainforest",
+      "title": "5 Wild Facts About The Amazon Rainforest",
+      "video_id": "iHJP7z_iQgA",
+      "posted_at": "2026-08-26T09:41:57.361090"
     }
   ],
-  "total_posted": 146
+  "total_posted": 147
 }
