@@ -14,7 +14,8 @@
     "ancient Rome",
     "famous inventions",
     "penguins",
-    "the Amazon rainforest"
+    "the Amazon rainforest",
+    "extreme weather"
   ],
   "posted": [
     {
@@ -898,7 +899,13 @@
       "title": "5 Wild Facts About The Amazon Rainforest",
       "video_id": "iHJP7z_iQgA",
       "posted_at": "2026-08-26T09:41:57.361090"
+    },
+    {
+      "topic": "extreme weather",
+      "title": "5 Wild Facts About Extreme Weather",
+      "video_id": "LZ_wiV9lwFQ",
+      "posted_at": "2026-08-27T19:30:48.872217"
     }
   ],
-  "total_posted": 147
+  "total_posted": 148
 }
