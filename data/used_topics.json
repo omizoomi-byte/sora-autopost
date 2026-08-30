@@ -15,7 +15,8 @@
     "famous inventions",
     "penguins",
     "the Amazon rainforest",
-    "extreme weather"
+    "extreme weather",
+    "Olympic Games"
   ],
   "posted": [
     {
@@ -905,7 +906,13 @@
       "title": "5 Wild Facts About Extreme Weather",
       "video_id": "LZ_wiV9lwFQ",
       "posted_at": "2026-08-27T19:30:48.872217"
+    },
+    {
+      "topic": "Olympic Games",
+      "title": "5 Wild Facts About Olympic Games",
+      "video_id": "6pyptRk8DpA",
+      "posted_at": "2026-08-30T14:22:49.563043"
     }
   ],
-  "total_posted": 148
+  "total_posted": 149
 }
