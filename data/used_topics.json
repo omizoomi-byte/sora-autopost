@@ -16,7 +16,8 @@
     "penguins",
     "the Amazon rainforest",
     "extreme weather",
-    "Olympic Games"
+    "Olympic Games",
+    "the Sahara desert"
   ],
   "posted": [
     {
@@ -912,7 +913,13 @@
       "title": "5 Wild Facts About Olympic Games",
       "video_id": "6pyptRk8DpA",
       "posted_at": "2026-08-30T14:22:49.563043"
+    },
+    {
+      "topic": "the Sahara desert",
+      "title": "5 Wild Facts About The Sahara Desert",
+      "video_id": "gA2jsE6VWkc",
+      "posted_at": "2026-08-31T16:47:56.544335"
     }
   ],
-  "total_posted": 149
+  "total_posted": 150
 }
