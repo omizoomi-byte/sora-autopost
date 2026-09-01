@@ -17,7 +17,8 @@
     "the Amazon rainforest",
     "extreme weather",
     "Olympic Games",
-    "the Sahara desert"
+    "the Sahara desert",
+    "World War II"
   ],
   "posted": [
     {
@@ -919,7 +920,13 @@
       "title": "5 Wild Facts About The Sahara Desert",
       "video_id": "gA2jsE6VWkc",
       "posted_at": "2026-08-31T16:47:56.544335"
+    },
+    {
+      "topic": "World War II",
+      "title": "5 Wild Facts About World War Ii",
+      "video_id": "7KC4aW8ayt0",
+      "posted_at": "2026-09-01T14:01:00.809492"
     }
   ],
-  "total_posted": 150
+  "total_posted": 151
 }
