@@ -18,7 +18,8 @@
     "extreme weather",
     "Olympic Games",
     "the Sahara desert",
-    "World War II"
+    "World War II",
+    "ancient Egypt"
   ],
   "posted": [
     {
@@ -926,7 +927,13 @@
       "title": "5 Wild Facts About World War Ii",
       "video_id": "7KC4aW8ayt0",
       "posted_at": "2026-09-01T14:01:00.809492"
+    },
+    {
+      "topic": "ancient Egypt",
+      "title": "5 Wild Facts About Ancient Egypt",
+      "video_id": "Xv-cE4EYYww",
+      "posted_at": "2026-09-02T13:21:18.498078"
     }
   ],
-  "total_posted": 151
+  "total_posted": 152
 }
