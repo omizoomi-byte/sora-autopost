@@ -20,7 +20,8 @@
     "the Sahara desert",
     "World War II",
     "ancient Egypt",
-    "the ocean"
+    "the ocean",
+    "dogs"
   ],
   "posted": [
     {
@@ -940,7 +941,13 @@
       "title": "5 Wild Facts About The Ocean",
       "video_id": "K-wXtgQ9ivI",
       "posted_at": "2026-09-03T13:23:50.215747"
+    },
+    {
+      "topic": "dogs",
+      "title": "5 Wild Facts About Dogs",
+      "video_id": "pW-Ryjl_ikk",
+      "posted_at": "2026-09-04T13:14:49.545232"
     }
   ],
-  "total_posted": 153
+  "total_posted": 154
 }
