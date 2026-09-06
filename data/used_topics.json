@@ -22,7 +22,8 @@
     "ancient Egypt",
     "the ocean",
     "dogs",
-    "the human brain"
+    "the human brain",
+    "the Great Wall of China"
   ],
   "posted": [
     {
@@ -954,7 +955,13 @@
       "title": "5 Wild Facts About The Human Brain",
       "video_id": "1kgxn7Zk6HU",
       "posted_at": "2026-09-05T12:28:29.245216"
+    },
+    {
+      "topic": "the Great Wall of China",
+      "title": "5 Wild Facts About The Great Wall Of China",
+      "video_id": "KqlK1CAu7Nk",
+      "posted_at": "2026-09-06T12:44:42.960139"
     }
   ],
-  "total_posted": 155
+  "total_posted": 156
 }
