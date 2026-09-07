@@ -23,7 +23,8 @@
     "the ocean",
     "dogs",
     "the human brain",
-    "the Great Wall of China"
+    "the Great Wall of China",
+    "cats"
   ],
   "posted": [
     {
@@ -961,7 +962,13 @@
       "title": "5 Wild Facts About The Great Wall Of China",
       "video_id": "KqlK1CAu7Nk",
       "posted_at": "2026-09-06T12:44:42.960139"
+    },
+    {
+      "topic": "cats",
+      "title": "5 Wild Facts About Cats",
+      "video_id": "DQg1ny8sOyg",
+      "posted_at": "2026-09-07T14:53:33.418163"
     }
   ],
-  "total_posted": 156
+  "total_posted": 157
 }
