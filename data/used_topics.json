@@ -24,7 +24,8 @@
     "dogs",
     "the human brain",
     "the Great Wall of China",
-    "cats"
+    "cats",
+    "deep sea creatures"
   ],
   "posted": [
     {
@@ -968,7 +969,13 @@
       "title": "5 Wild Facts About Cats",
       "video_id": "DQg1ny8sOyg",
       "posted_at": "2026-09-07T14:53:33.418163"
+    },
+    {
+      "topic": "deep sea creatures",
+      "title": "5 Wild Facts About Deep Sea Creatures",
+      "video_id": "fPFeWtLRoxM",
+      "posted_at": "2026-09-08T13:28:01.823009"
     }
   ],
-  "total_posted": 157
+  "total_posted": 158
 }
