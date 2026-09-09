@@ -25,7 +25,8 @@
     "the human brain",
     "the Great Wall of China",
     "cats",
-    "deep sea creatures"
+    "deep sea creatures",
+    "chocolate"
   ],
   "posted": [
     {
@@ -975,7 +976,13 @@
       "title": "5 Wild Facts About Deep Sea Creatures",
       "video_id": "fPFeWtLRoxM",
       "posted_at": "2026-09-08T13:28:01.823009"
+    },
+    {
+      "topic": "chocolate",
+      "title": "5 Wild Facts About Chocolate",
+      "video_id": "SNMe-gF-4Kk",
+      "posted_at": "2026-09-09T13:28:31.648159"
     }
   ],
-  "total_posted": 158
+  "total_posted": 159
 }
