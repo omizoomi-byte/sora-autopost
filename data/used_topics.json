@@ -26,7 +26,8 @@
     "the Great Wall of China",
     "cats",
     "deep sea creatures",
-    "chocolate"
+    "chocolate",
+    "space exploration"
   ],
   "posted": [
     {
@@ -982,7 +983,13 @@
       "title": "5 Wild Facts About Chocolate",
       "video_id": "SNMe-gF-4Kk",
       "posted_at": "2026-09-09T13:28:31.648159"
+    },
+    {
+      "topic": "space exploration",
+      "title": "5 Wild Facts About Space Exploration",
+      "video_id": "XCRn1cwalfk",
+      "posted_at": "2026-09-10T13:22:48.416698"
     }
   ],
-  "total_posted": 159
+  "total_posted": 160
 }
