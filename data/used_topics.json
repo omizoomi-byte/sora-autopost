@@ -28,7 +28,8 @@
     "deep sea creatures",
     "chocolate",
     "space exploration",
-    "gold"
+    "gold",
+    "football/soccer"
   ],
   "posted": [
     {
@@ -996,7 +997,13 @@
       "title": "5 Wild Facts About Gold",
       "video_id": "I3qFpS3yli8",
       "posted_at": "2026-09-11T13:17:42.426891"
+    },
+    {
+      "topic": "football/soccer",
+      "title": "5 Wild Facts About Football/Soccer",
+      "video_id": "K5dvkTNrjMs",
+      "posted_at": "2026-09-12T12:45:15.032138"
     }
   ],
-  "total_posted": 161
+  "total_posted": 162
 }
