@@ -29,7 +29,8 @@
     "chocolate",
     "space exploration",
     "gold",
-    "football/soccer"
+    "football/soccer",
+    "lions"
   ],
   "posted": [
     {
@@ -1003,7 +1004,13 @@
       "title": "5 Wild Facts About Football/Soccer",
       "video_id": "K5dvkTNrjMs",
       "posted_at": "2026-09-12T12:45:15.032138"
+    },
+    {
+      "topic": "lions",
+      "title": "5 Wild Facts About Lions",
+      "video_id": "2ftC0Iw3tco",
+      "posted_at": "2026-09-13T13:46:50.605881"
     }
   ],
-  "total_posted": 162
+  "total_posted": 163
 }
