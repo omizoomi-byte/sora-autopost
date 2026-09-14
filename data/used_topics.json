@@ -30,7 +30,8 @@
     "space exploration",
     "gold",
     "football/soccer",
-    "lions"
+    "lions",
+    "famous scientists"
   ],
   "posted": [
     {
@@ -1010,7 +1011,13 @@
       "title": "5 Wild Facts About Lions",
       "video_id": "2ftC0Iw3tco",
       "posted_at": "2026-09-13T13:46:50.605881"
+    },
+    {
+      "topic": "famous scientists",
+      "title": "5 Wild Facts About Famous Scientists",
+      "video_id": "IvmQjE4XU50",
+      "posted_at": "2026-09-14T15:42:41.919597"
     }
   ],
-  "total_posted": 163
+  "total_posted": 164
 }
