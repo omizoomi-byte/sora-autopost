@@ -31,7 +31,8 @@
     "gold",
     "football/soccer",
     "lions",
-    "famous scientists"
+    "famous scientists",
+    "famous artists"
   ],
   "posted": [
     {
@@ -1017,7 +1018,13 @@
       "title": "5 Wild Facts About Famous Scientists",
       "video_id": "IvmQjE4XU50",
       "posted_at": "2026-09-14T15:42:41.919597"
+    },
+    {
+      "topic": "famous artists",
+      "title": "5 Wild Facts About Famous Artists",
+      "video_id": "sKiT7ZXMEb8",
+      "posted_at": "2026-09-15T14:13:01.444645"
     }
   ],
-  "total_posted": 164
+  "total_posted": 165
 }
