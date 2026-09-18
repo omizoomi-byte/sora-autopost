@@ -32,7 +32,8 @@
     "football/soccer",
     "lions",
     "famous scientists",
-    "famous artists"
+    "famous artists",
+    "languages"
   ],
   "posted": [
     {
@@ -1024,7 +1025,13 @@
       "title": "5 Wild Facts About Famous Artists",
       "video_id": "sKiT7ZXMEb8",
       "posted_at": "2026-09-15T14:13:01.444645"
+    },
+    {
+      "topic": "languages",
+      "title": "5 Wild Facts About Languages",
+      "video_id": "qT3E4Oq1-qs",
+      "posted_at": "2026-09-18T13:27:10.765883"
     }
   ],
-  "total_posted": 165
+  "total_posted": 166
 }
