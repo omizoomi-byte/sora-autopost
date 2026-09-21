@@ -35,7 +35,8 @@
     "famous artists",
     "languages",
     "the solar system",
-    "the Amazon river"
+    "the Amazon river",
+    "elephants"
   ],
   "posted": [
     {
@@ -1045,7 +1046,13 @@
       "title": "5 Wild Facts About The Amazon River",
       "video_id": "Ruz2myO5sB0",
       "posted_at": "2026-09-20T13:33:33.654822"
+    },
+    {
+      "topic": "elephants",
+      "title": "5 Wild Facts About Elephants",
+      "video_id": "B_L21Jt_sho",
+      "posted_at": "2026-09-21T15:45:18.142090"
     }
   ],
-  "total_posted": 168
+  "total_posted": 169
 }
