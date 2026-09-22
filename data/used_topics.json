@@ -36,7 +36,8 @@
     "languages",
     "the solar system",
     "the Amazon river",
-    "elephants"
+    "elephants",
+    "the Roman Empire"
   ],
   "posted": [
     {
@@ -1052,7 +1053,13 @@
       "title": "5 Wild Facts About Elephants",
       "video_id": "B_L21Jt_sho",
       "posted_at": "2026-09-21T15:45:18.142090"
+    },
+    {
+      "topic": "the Roman Empire",
+      "title": "5 Wild Facts About The Roman Empire",
+      "video_id": "PcFqlfwZ9oY",
+      "posted_at": "2026-09-22T14:00:56.820444"
     }
   ],
-  "total_posted": 169
+  "total_posted": 170
 }
