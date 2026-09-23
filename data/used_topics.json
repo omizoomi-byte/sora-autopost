@@ -37,7 +37,8 @@
     "the solar system",
     "the Amazon river",
     "elephants",
-    "the Roman Empire"
+    "the Roman Empire",
+    "diamonds"
   ],
   "posted": [
     {
@@ -1059,7 +1060,13 @@
       "title": "5 Wild Facts About The Roman Empire",
       "video_id": "PcFqlfwZ9oY",
       "posted_at": "2026-09-22T14:00:56.820444"
+    },
+    {
+      "topic": "diamonds",
+      "title": "5 Wild Facts About Diamonds",
+      "video_id": "sIb8BSRR_ZE",
+      "posted_at": "2026-09-23T14:10:23.930850"
     }
   ],
-  "total_posted": 170
+  "total_posted": 171
 }
