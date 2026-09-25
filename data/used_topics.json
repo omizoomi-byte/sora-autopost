@@ -38,7 +38,8 @@
     "the Amazon river",
     "elephants",
     "the Roman Empire",
-    "diamonds"
+    "diamonds",
+    "dinosaurs"
   ],
   "posted": [
     {
@@ -1066,7 +1067,13 @@
       "title": "5 Wild Facts About Diamonds",
       "video_id": "sIb8BSRR_ZE",
       "posted_at": "2026-09-23T14:10:23.930850"
+    },
+    {
+      "topic": "dinosaurs",
+      "title": "5 Wild Facts About Dinosaurs",
+      "video_id": "-Vfz2mbYJ2A",
+      "posted_at": "2026-09-25T14:28:12.875837"
     }
   ],
-  "total_posted": 171
+  "total_posted": 172
 }
