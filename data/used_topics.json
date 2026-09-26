@@ -39,7 +39,8 @@
     "elephants",
     "the Roman Empire",
     "diamonds",
-    "dinosaurs"
+    "dinosaurs",
+    "black holes"
   ],
   "posted": [
     {
@@ -1073,7 +1074,13 @@
       "title": "5 Wild Facts About Dinosaurs",
       "video_id": "-Vfz2mbYJ2A",
       "posted_at": "2026-09-25T14:28:12.875837"
+    },
+    {
+      "topic": "black holes",
+      "title": "5 Wild Facts About Black Holes",
+      "video_id": "mozm2Uw1fsk",
+      "posted_at": "2026-09-26T13:42:49.622484"
     }
   ],
-  "total_posted": 172
+  "total_posted": 173
 }
