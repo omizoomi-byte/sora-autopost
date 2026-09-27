@@ -40,7 +40,8 @@
     "the Roman Empire",
     "diamonds",
     "dinosaurs",
-    "black holes"
+    "black holes",
+    "volcanoes"
   ],
   "posted": [
     {
@@ -1080,7 +1081,13 @@
       "title": "5 Wild Facts About Black Holes",
       "video_id": "mozm2Uw1fsk",
       "posted_at": "2026-09-26T13:42:49.622484"
+    },
+    {
+      "topic": "volcanoes",
+      "title": "5 Wild Facts About Volcanoes",
+      "video_id": "I3NmF-1zbAM",
+      "posted_at": "2026-09-27T14:36:32.698277"
     }
   ],
-  "total_posted": 173
+  "total_posted": 174
 }
