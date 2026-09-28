@@ -41,7 +41,8 @@
     "diamonds",
     "dinosaurs",
     "black holes",
-    "volcanoes"
+    "volcanoes",
+    "bananas"
   ],
   "posted": [
     {
@@ -1087,7 +1088,13 @@
       "title": "5 Wild Facts About Volcanoes",
       "video_id": "I3NmF-1zbAM",
       "posted_at": "2026-09-27T14:36:32.698277"
+    },
+    {
+      "topic": "bananas",
+      "title": "5 Wild Facts About Bananas",
+      "video_id": "X7i7KzJreHQ",
+      "posted_at": "2026-09-28T17:24:05.597903"
     }
   ],
-  "total_posted": 174
+  "total_posted": 175
 }
