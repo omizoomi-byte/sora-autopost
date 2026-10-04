@@ -1,6 +1,7 @@
 {
   "used_topics": [
-    "the Arctic"
+    "the Arctic",
+    "space exploration"
   ],
   "posted": [
     {
@@ -1064,7 +1065,13 @@
       "title": "5 Wild Facts About The Arctic",
       "video_id": "hvc_Og8TTfA",
       "posted_at": "2026-10-03T14:12:14.145804"
+    },
+    {
+      "topic": "space exploration",
+      "title": "5 Wild Facts About Space Exploration",
+      "video_id": "obzJwVR62jA",
+      "posted_at": "2026-10-04T14:41:23.957740"
     }
   ],
-  "total_posted": 177
+  "total_posted": 178
 }
