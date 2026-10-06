@@ -2,7 +2,8 @@
   "used_topics": [
     "the Arctic",
     "space exploration",
-    "cats"
+    "cats",
+    "coffee"
   ],
   "posted": [
     {
@@ -1078,7 +1079,13 @@
       "title": "5 Wild Facts About Cats",
       "video_id": "cRWi4DbVyKg",
       "posted_at": "2026-10-05T17:57:01.566016"
+    },
+    {
+      "topic": "coffee",
+      "title": "5 Wild Facts About Coffee",
+      "video_id": "ZVKD0Xk65pM",
+      "posted_at": "2026-10-06T15:44:30.140308"
     }
   ],
-  "total_posted": 179
+  "total_posted": 180
 }
