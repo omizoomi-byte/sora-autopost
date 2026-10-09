@@ -4,7 +4,8 @@
     "space exploration",
     "cats",
     "coffee",
-    "gold"
+    "gold",
+    "ancient Egypt"
   ],
   "posted": [
     {
@@ -1092,7 +1093,13 @@
       "title": "5 Wild Facts About Gold",
       "video_id": "u5hCV5smMr4",
       "posted_at": "2026-10-07T16:11:00.932896"
+    },
+    {
+      "topic": "ancient Egypt",
+      "title": "5 Wild Facts About Ancient Egypt",
+      "video_id": "IcfpqNP6SJQ",
+      "posted_at": "2026-10-09T15:56:51.783209"
     }
   ],
-  "total_posted": 181
+  "total_posted": 182
 }
