@@ -5,7 +5,8 @@
     "cats",
     "coffee",
     "gold",
-    "ancient Egypt"
+    "ancient Egypt",
+    "the Great Wall of China"
   ],
   "posted": [
     {
@@ -1099,7 +1100,13 @@
       "title": "5 Wild Facts About Ancient Egypt",
       "video_id": "IcfpqNP6SJQ",
       "posted_at": "2026-10-09T15:56:51.783209"
+    },
+    {
+      "topic": "the Great Wall of China",
+      "title": "5 Wild Facts About The Great Wall Of China",
+      "video_id": "lJ8hZpdIV1w",
+      "posted_at": "2026-10-10T15:09:52.581045"
     }
   ],
-  "total_posted": 182
+  "total_posted": 183
 }
