@@ -7,7 +7,8 @@
     "gold",
     "ancient Egypt",
     "the Great Wall of China",
-    "the human brain"
+    "the human brain",
+    "Olympic Games"
   ],
   "posted": [
     {
@@ -1113,7 +1114,13 @@
       "title": "5 Wild Facts About The Human Brain",
       "video_id": "sCqRf_htxcI",
       "posted_at": "2026-10-11T15:23:14.976889"
+    },
+    {
+      "topic": "Olympic Games",
+      "title": "5 Wild Facts About Olympic Games",
+      "video_id": "-T9Z4beEsVo",
+      "posted_at": "2026-10-13T16:49:01.471834"
     }
   ],
-  "total_posted": 184
+  "total_posted": 185
 }
