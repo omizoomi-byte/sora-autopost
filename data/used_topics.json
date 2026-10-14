@@ -8,7 +8,8 @@
     "ancient Egypt",
     "the Great Wall of China",
     "the human brain",
-    "Olympic Games"
+    "Olympic Games",
+    "Premier League football"
   ],
   "posted": [
     {
@@ -1120,7 +1121,13 @@
       "title": "5 Wild Facts About Olympic Games",
       "video_id": "-T9Z4beEsVo",
       "posted_at": "2026-10-13T16:49:01.471834"
+    },
+    {
+      "topic": "Premier League football",
+      "title": "5 Wild Facts About Premier League Football",
+      "video_id": "12ZwjK_sYc4",
+      "posted_at": "2026-10-14T14:24:14.645486"
     }
   ],
-  "total_posted": 185
+  "total_posted": 186
 }
