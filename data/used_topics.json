@@ -9,7 +9,8 @@
     "the Great Wall of China",
     "the human brain",
     "Olympic Games",
-    "Premier League football"
+    "Premier League football",
+    "famous inventions"
   ],
   "posted": [
     {
@@ -1127,7 +1128,13 @@
       "title": "5 Wild Facts About Premier League Football",
       "video_id": "12ZwjK_sYc4",
       "posted_at": "2026-10-14T14:24:14.645486"
+    },
+    {
+      "topic": "famous inventions",
+      "title": "5 Wild Facts About Famous Inventions",
+      "video_id": "Mg8vxnifzCk",
+      "posted_at": "2026-10-15T13:59:43.498603"
     }
   ],
-  "total_posted": 186
+  "total_posted": 187
 }
