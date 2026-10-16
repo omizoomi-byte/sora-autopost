@@ -10,7 +10,8 @@
     "the human brain",
     "Olympic Games",
     "Premier League football",
-    "famous inventions"
+    "famous inventions",
+    "lions"
   ],
   "posted": [
     {
@@ -1134,7 +1135,13 @@
       "title": "5 Wild Facts About Famous Inventions",
       "video_id": "Mg8vxnifzCk",
       "posted_at": "2026-10-15T13:59:43.498603"
+    },
+    {
+      "topic": "lions",
+      "title": "5 Wild Facts About Lions",
+      "video_id": "hlQwCh8s3ow",
+      "posted_at": "2026-10-16T13:49:55.249391"
     }
   ],
-  "total_posted": 187
+  "total_posted": 188
 }
