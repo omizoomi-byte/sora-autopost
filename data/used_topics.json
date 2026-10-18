@@ -12,7 +12,8 @@
     "Premier League football",
     "famous inventions",
     "lions",
-    "honey bees"
+    "honey bees",
+    "extreme weather"
   ],
   "posted": [
     {
@@ -1148,7 +1149,13 @@
       "title": "5 Wild Facts About Honey Bees",
       "video_id": "NXslUydkX3Q",
       "posted_at": "2026-10-17T12:45:26.026889"
+    },
+    {
+      "topic": "extreme weather",
+      "title": "5 Wild Facts About Extreme Weather",
+      "video_id": "mOGNHB_ck1Y",
+      "posted_at": "2026-10-18T13:05:23.721871"
     }
   ],
-  "total_posted": 189
+  "total_posted": 190
 }
