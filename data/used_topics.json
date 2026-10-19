@@ -13,7 +13,8 @@
     "famous inventions",
     "lions",
     "honey bees",
-    "extreme weather"
+    "extreme weather",
+    "penguins"
   ],
   "posted": [
     {
@@ -1155,7 +1156,13 @@
       "title": "5 Wild Facts About Extreme Weather",
       "video_id": "mOGNHB_ck1Y",
       "posted_at": "2026-10-18T13:05:23.721871"
+    },
+    {
+      "topic": "penguins",
+      "title": "5 Wild Facts About Penguins",
+      "video_id": "t4RwZZvJBfs",
+      "posted_at": "2026-10-19T16:15:33.635460"
     }
   ],
-  "total_posted": 190
+  "total_posted": 191
 }
