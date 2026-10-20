@@ -14,7 +14,8 @@
     "lions",
     "honey bees",
     "extreme weather",
-    "penguins"
+    "penguins",
+    "the Amazon river"
   ],
   "posted": [
     {
@@ -1162,7 +1163,13 @@
       "title": "5 Wild Facts About Penguins",
       "video_id": "t4RwZZvJBfs",
       "posted_at": "2026-10-19T16:15:33.635460"
+    },
+    {
+      "topic": "the Amazon river",
+      "title": "5 Wild Facts About The Amazon River",
+      "video_id": "Lw7-yvAiua0",
+      "posted_at": "2026-10-20T14:09:29.961547"
     }
   ],
-  "total_posted": 191
+  "total_posted": 192
 }
