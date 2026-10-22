@@ -16,7 +16,8 @@
     "extreme weather",
     "penguins",
     "the Amazon river",
-    "football/soccer"
+    "football/soccer",
+    "Mars"
   ],
   "posted": [
     {
@@ -1176,7 +1177,13 @@
       "title": "5 Wild Facts About Football/Soccer",
       "video_id": "RYSu4VDpUGY",
       "posted_at": "2026-10-21T14:25:27.935722"
+    },
+    {
+      "topic": "Mars",
+      "title": "5 Wild Facts About Mars",
+      "video_id": "ged5F8bVa2U",
+      "posted_at": "2026-10-22T14:24:00.306822"
     }
   ],
-  "total_posted": 193
+  "total_posted": 194
 }
