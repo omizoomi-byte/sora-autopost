@@ -18,7 +18,8 @@
     "the Amazon river",
     "football/soccer",
     "Mars",
-    "sharks"
+    "sharks",
+    "famous scientists"
   ],
   "posted": [
     {
@@ -1190,7 +1191,13 @@
       "title": "5 Wild Facts About Sharks",
       "video_id": "B8iSjfbPvK0",
       "posted_at": "2026-10-23T14:06:59.787858"
+    },
+    {
+      "topic": "famous scientists",
+      "title": "5 Wild Facts About Famous Scientists",
+      "video_id": "FL47-vDQY-A",
+      "posted_at": "2026-10-24T13:10:23.091180"
     }
   ],
-  "total_posted": 195
+  "total_posted": 196
 }
