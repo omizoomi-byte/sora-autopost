@@ -19,7 +19,8 @@
     "football/soccer",
     "Mars",
     "sharks",
-    "famous scientists"
+    "famous scientists",
+    "Mount Everest"
   ],
   "posted": [
     {
@@ -1197,7 +1198,13 @@
       "title": "5 Wild Facts About Famous Scientists",
       "video_id": "FL47-vDQY-A",
       "posted_at": "2026-10-24T13:10:23.091180"
+    },
+    {
+      "topic": "Mount Everest",
+      "title": "5 Wild Facts About Mount Everest",
+      "video_id": "6a6MSdB_GpY",
+      "posted_at": "2026-10-25T13:40:00.877351"
     }
   ],
-  "total_posted": 196
+  "total_posted": 197
 }
