@@ -20,7 +20,8 @@
     "Mars",
     "sharks",
     "famous scientists",
-    "Mount Everest"
+    "Mount Everest",
+    "pizza"
   ],
   "posted": [
     {
@@ -1204,7 +1205,13 @@
       "title": "5 Wild Facts About Mount Everest",
       "video_id": "6a6MSdB_GpY",
       "posted_at": "2026-10-25T13:40:00.877351"
+    },
+    {
+      "topic": "pizza",
+      "title": "5 Wild Facts About Pizza",
+      "video_id": "Q3TFgtoL4qM",
+      "posted_at": "2026-10-26T16:00:12.605586"
     }
   ],
-  "total_posted": 197
+  "total_posted": 198
 }
