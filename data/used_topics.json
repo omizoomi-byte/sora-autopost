@@ -21,7 +21,8 @@
     "sharks",
     "famous scientists",
     "Mount Everest",
-    "pizza"
+    "pizza",
+    "bananas"
   ],
   "posted": [
     {
@@ -1211,7 +1212,13 @@
       "title": "5 Wild Facts About Pizza",
       "video_id": "Q3TFgtoL4qM",
       "posted_at": "2026-10-26T16:00:12.605586"
+    },
+    {
+      "topic": "bananas",
+      "title": "5 Wild Facts About Bananas",
+      "video_id": "ZSrVzSwhE7U",
+      "posted_at": "2026-10-27T16:02:19.628447"
     }
   ],
-  "total_posted": 198
+  "total_posted": 199
 }
