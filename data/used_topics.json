@@ -22,7 +22,8 @@
     "famous scientists",
     "Mount Everest",
     "pizza",
-    "bananas"
+    "bananas",
+    "the moon"
   ],
   "posted": [
     {
@@ -1218,7 +1219,13 @@
       "title": "5 Wild Facts About Bananas",
       "video_id": "ZSrVzSwhE7U",
       "posted_at": "2026-10-27T16:02:19.628447"
+    },
+    {
+      "topic": "the moon",
+      "title": "5 Wild Facts About The Moon",
+      "video_id": "5FxgEDq0wXQ",
+      "posted_at": "2026-10-28T15:46:31.586532"
     }
   ],
-  "total_posted": 199
+  "total_posted": 200
 }
