@@ -27,7 +27,8 @@
     "languages",
     "the Sahara desert",
     "the ocean",
-    "black holes"
+    "black holes",
+    "dogs"
   ],
   "posted": [
     {
@@ -1253,7 +1254,13 @@
       "title": "5 Wild Facts About Black Holes",
       "video_id": "n3nNpKSRSNk",
       "posted_at": "2026-11-04T16:53:29.583106"
+    },
+    {
+      "topic": "dogs",
+      "title": "5 Wild Facts About Dogs",
+      "video_id": "w5Xze4HzuWI",
+      "posted_at": "2026-11-05T17:44:03.688435"
     }
   ],
-  "total_posted": 204
+  "total_posted": 205
 }
