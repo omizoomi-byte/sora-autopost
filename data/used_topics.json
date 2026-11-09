@@ -31,7 +31,8 @@
     "dogs",
     "chocolate",
     "World War II",
-    "wild animals"
+    "wild animals",
+    "dinosaurs"
   ],
   "posted": [
     {
@@ -1281,7 +1282,13 @@
       "title": "5 Wild Facts About Wild Animals",
       "video_id": "ueRQYLEulL0",
       "posted_at": "2026-11-08T15:50:40.766071"
+    },
+    {
+      "topic": "dinosaurs",
+      "title": "5 Wild Facts About Dinosaurs",
+      "video_id": "vqHKP1lfcbU",
+      "posted_at": "2026-11-09T19:36:25.926035"
     }
   ],
-  "total_posted": 208
+  "total_posted": 209
 }
