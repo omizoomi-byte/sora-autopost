@@ -32,7 +32,8 @@
     "chocolate",
     "World War II",
     "wild animals",
-    "dinosaurs"
+    "dinosaurs",
+    "the Roman Empire"
   ],
   "posted": [
     {
@@ -1288,7 +1289,13 @@
       "title": "5 Wild Facts About Dinosaurs",
       "video_id": "vqHKP1lfcbU",
       "posted_at": "2026-11-09T19:36:25.926035"
+    },
+    {
+      "topic": "the Roman Empire",
+      "title": "5 Wild Facts About The Roman Empire",
+      "video_id": "WA3xxJ9XBF4",
+      "posted_at": "2026-11-10T16:54:01.672196"
     }
   ],
-  "total_posted": 209
+  "total_posted": 210
 }
