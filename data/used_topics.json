@@ -33,7 +33,8 @@
     "World War II",
     "wild animals",
     "dinosaurs",
-    "the Roman Empire"
+    "the Roman Empire",
+    "the Amazon rainforest"
   ],
   "posted": [
     {
@@ -1295,7 +1296,13 @@
       "title": "5 Wild Facts About The Roman Empire",
       "video_id": "WA3xxJ9XBF4",
       "posted_at": "2026-11-10T16:54:01.672196"
+    },
+    {
+      "topic": "the Amazon rainforest",
+      "title": "5 Wild Facts About The Amazon Rainforest",
+      "video_id": "X9wvLkM4-qc",
+      "posted_at": "2026-11-11T17:00:38.860900"
     }
   ],
-  "total_posted": 210
+  "total_posted": 211
 }
