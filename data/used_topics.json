@@ -34,7 +34,8 @@
     "wild animals",
     "dinosaurs",
     "the Roman Empire",
-    "the Amazon rainforest"
+    "the Amazon rainforest",
+    "ancient Rome"
   ],
   "posted": [
     {
@@ -1302,7 +1303,13 @@
       "title": "5 Wild Facts About The Amazon Rainforest",
       "video_id": "X9wvLkM4-qc",
       "posted_at": "2026-11-11T17:00:38.860900"
+    },
+    {
+      "topic": "ancient Rome",
+      "title": "5 Wild Facts About Ancient Rome",
+      "video_id": "i1QqRAT1yXE",
+      "posted_at": "2026-11-12T17:31:14.888241"
     }
   ],
-  "total_posted": 211
+  "total_posted": 212
 }
