@@ -37,7 +37,8 @@
     "the Amazon rainforest",
     "ancient Rome",
     "world records",
-    "volcanoes"
+    "volcanoes",
+    "famous artists"
   ],
   "posted": [
     {
@@ -1323,7 +1324,13 @@
       "title": "5 Wild Facts About Volcanoes",
       "video_id": "zt9mj7H53VY",
       "posted_at": "2026-11-14T15:38:14.458369"
+    },
+    {
+      "topic": "famous artists",
+      "title": "5 Wild Facts About Famous Artists",
+      "video_id": "rFjLwDFsIA0",
+      "posted_at": "2026-11-15T16:10:39.491538"
     }
   ],
-  "total_posted": 214
+  "total_posted": 215
 }
