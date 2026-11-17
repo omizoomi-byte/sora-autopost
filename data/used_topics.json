@@ -38,7 +38,8 @@
     "ancient Rome",
     "world records",
     "volcanoes",
-    "famous artists"
+    "famous artists",
+    "elephants"
   ],
   "posted": [
     {
@@ -1330,7 +1331,13 @@
       "title": "5 Wild Facts About Famous Artists",
       "video_id": "rFjLwDFsIA0",
       "posted_at": "2026-11-15T16:10:39.491538"
+    },
+    {
+      "topic": "elephants",
+      "title": "5 Wild Facts About Elephants",
+      "video_id": "98eTs83jfw0",
+      "posted_at": "2026-11-17T18:14:54.829525"
     }
   ],
-  "total_posted": 215
+  "total_posted": 216
 }
