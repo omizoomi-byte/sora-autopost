@@ -40,7 +40,8 @@
     "volcanoes",
     "famous artists",
     "elephants",
-    "the solar system"
+    "the solar system",
+    "diamonds"
   ],
   "posted": [
     {
@@ -1344,7 +1345,13 @@
       "title": "5 Wild Facts About The Solar System",
       "video_id": "NLYo7pOhzCs",
       "posted_at": "2026-11-18T18:07:50.140695"
+    },
+    {
+      "topic": "diamonds",
+      "title": "5 Wild Facts About Diamonds",
+      "video_id": "LlMHaBydkyk",
+      "posted_at": "2026-11-20T17:37:38.238273"
     }
   ],
-  "total_posted": 217
+  "total_posted": 218
 }
