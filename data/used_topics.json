@@ -41,7 +41,8 @@
     "famous artists",
     "elephants",
     "the solar system",
-    "diamonds"
+    "diamonds",
+    "deep sea creatures"
   ],
   "posted": [
     {
@@ -1351,7 +1352,13 @@
       "title": "5 Wild Facts About Diamonds",
       "video_id": "LlMHaBydkyk",
       "posted_at": "2026-11-20T17:37:38.238273"
+    },
+    {
+      "topic": "deep sea creatures",
+      "title": "5 Wild Facts About Deep Sea Creatures",
+      "video_id": "bWac5aboUis",
+      "posted_at": "2026-11-21T16:39:58.508329"
     }
   ],
-  "total_posted": 218
+  "total_posted": 219
 }
