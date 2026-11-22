@@ -42,7 +42,8 @@
     "elephants",
     "the solar system",
     "diamonds",
-    "deep sea creatures"
+    "deep sea creatures",
+    "Formula 1 racing"
   ],
   "posted": [
     {
@@ -1358,7 +1359,13 @@
       "title": "5 Wild Facts About Deep Sea Creatures",
       "video_id": "bWac5aboUis",
       "posted_at": "2026-11-21T16:39:58.508329"
+    },
+    {
+      "topic": "Formula 1 racing",
+      "title": "5 Wild Facts About Formula 1 Racing",
+      "video_id": "ZtVGvWnmq6E",
+      "posted_at": "2026-11-22T16:56:05.312657"
     }
   ],
-  "total_posted": 219
+  "total_posted": 220
 }
