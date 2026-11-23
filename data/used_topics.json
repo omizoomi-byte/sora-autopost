@@ -1,49 +1,6 @@
 {
   "used_topics": [
-    "the Arctic",
-    "space exploration",
-    "cats",
-    "coffee",
-    "gold",
-    "ancient Egypt",
-    "the Great Wall of China",
-    "the human brain",
-    "Olympic Games",
-    "Premier League football",
-    "famous inventions",
-    "lions",
-    "honey bees",
-    "extreme weather",
-    "penguins",
-    "the Amazon river",
-    "football/soccer",
-    "Mars",
-    "sharks",
-    "famous scientists",
-    "Mount Everest",
-    "pizza",
-    "bananas",
-    "the moon",
-    "languages",
-    "the Sahara desert",
-    "the ocean",
-    "black holes",
-    "dogs",
-    "chocolate",
-    "World War II",
-    "wild animals",
-    "dinosaurs",
-    "the Roman Empire",
-    "the Amazon rainforest",
-    "ancient Rome",
-    "world records",
-    "volcanoes",
-    "famous artists",
-    "elephants",
-    "the solar system",
-    "diamonds",
-    "deep sea creatures",
-    "Formula 1 racing"
+    "the human brain"
   ],
   "posted": [
     {
@@ -1365,7 +1322,13 @@
       "title": "5 Wild Facts About Formula 1 Racing",
       "video_id": "ZtVGvWnmq6E",
       "posted_at": "2026-11-22T16:56:05.312657"
+    },
+    {
+      "topic": "the human brain",
+      "title": "5 Wild Facts About The Human Brain",
+      "video_id": "QrUfklqV0RA",
+      "posted_at": "2026-11-23T20:57:47.919971"
     }
   ],
-  "total_posted": 220
+  "total_posted": 221
 }
