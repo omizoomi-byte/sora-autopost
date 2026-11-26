@@ -2,7 +2,8 @@
   "used_topics": [
     "the human brain",
     "the moon",
-    "the solar system"
+    "the solar system",
+    "famous scientists"
   ],
   "posted": [
     {
@@ -1342,7 +1343,13 @@
       "title": "5 Wild Facts About The Solar System",
       "video_id": "nwPIBxh6Ouc",
       "posted_at": "2026-11-25T19:00:29.744556"
+    },
+    {
+      "topic": "famous scientists",
+      "title": "5 Wild Facts About Famous Scientists",
+      "video_id": "u0qtye_vn_Q",
+      "posted_at": "2026-11-26T18:53:31.254314"
     }
   ],
-  "total_posted": 223
+  "total_posted": 224
 }
