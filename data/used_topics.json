@@ -3,7 +3,8 @@
     "the human brain",
     "the moon",
     "the solar system",
-    "famous scientists"
+    "famous scientists",
+    "the Sahara desert"
   ],
   "posted": [
     {
@@ -1349,7 +1350,13 @@
       "title": "5 Wild Facts About Famous Scientists",
       "video_id": "u0qtye_vn_Q",
       "posted_at": "2026-11-26T18:53:31.254314"
+    },
+    {
+      "topic": "the Sahara desert",
+      "title": "5 Wild Facts About The Sahara Desert",
+      "video_id": "w8I18XlIJVw",
+      "posted_at": "2026-11-27T18:48:04.225417"
     }
   ],
-  "total_posted": 224
+  "total_posted": 225
 }
